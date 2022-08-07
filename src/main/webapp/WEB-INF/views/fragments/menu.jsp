@@ -19,8 +19,8 @@
 <acme:menu-bar code="master.menu.home">
 	<acme:menu-left>
 		<acme:menu-option code="master.menu.anonymous" access="isAnonymous()">
-			<acme:menu-suboption code="47428674Y: Montalbán Martín, Raúl" action="http://www.twitch.com/"/>
-			<acme:menu-suboption code="47394372C: Suarez Perea, Daniel" action="http://www.twitter.com/"/>
+      <acme:menu-suboption code="47428674Y: MontalbÃ¡n MartÃ­n, RaÃºl" action="http://www.twitch.com/"/>
+			<acme:menu-suboption code="master.menu.anonymous.favourite-link-daniel" action="http://www.twitter.com/"/>
 		</acme:menu-option>
 
 		<acme:menu-option code="master.menu.administrator" access="hasRole('Administrator')">

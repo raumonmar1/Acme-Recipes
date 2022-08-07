@@ -8,7 +8,9 @@
 # purposes.  The copyright owner does not offer any warranties or representations, nor do
 # they accept any liabilities with respect to them.
 
+
 This project was contributed by:
 
 - Rafael Corchuelo (corchu@us.es)
 - Raúl Montalbán Martín (raumonmar1@alum.us.es)
+- Daniel Suárez Perea (dansuaper@alum.us.es)
