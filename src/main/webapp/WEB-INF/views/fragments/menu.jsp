@@ -19,7 +19,7 @@
 <acme:menu-bar code="master.menu.home">
 	<acme:menu-left>
 		<acme:menu-option code="master.menu.anonymous" access="isAnonymous()">
-      <acme:menu-suboption code="47428674Y: Montalbán Martín, Raúl" action="http://www.twitch.com/"/>
+      		<acme:menu-suboption code="master.menu.anonymous.favourite-link-raul" action="http://www.twitch.com/"/>
 			<acme:menu-suboption code="master.menu.anonymous.favourite-link-daniel" action="http://www.twitter.com/"/>
 		</acme:menu-option>
 
