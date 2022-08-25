@@ -1,4 +1,4 @@
-package acme.entities;
+package acme.entities.fineDishes;
 
 
 public enum FineDishStatus {
