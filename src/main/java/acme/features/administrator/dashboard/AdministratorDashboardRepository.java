@@ -29,7 +29,7 @@ public interface AdministratorDashboardRepository extends AbstractRepository{
 	Collection<Tuple> maximumRetailPriceOfComponents();
 	
 	//Kitchen Utensils
-	@Query("SELECT count(e) FROM Element e it WHERE e.type = 'KITCHEN UTENSIL'")
+	@Query("SELECT count(e) FROM Element e WHERE e.type = 'KITCHEN UTENSIL'")
 	int totalNumberOfKitchenUtensils();
 
 	@Query("SELECT avg(e.retailPrice.amount), e.retailPrice.currency FROM Element e WHERE e.type = 'KITCHEN UTENSIL' GROUP BY e.retailPrice.currency")

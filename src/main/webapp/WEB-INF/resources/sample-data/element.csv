@@ -1,0 +1,21 @@
+key,published,name,code,description,retail-price,link,type,amountUnit,key:chef
+element-01,true,Salt,IN:AAA-001,This is an ingredient,EUR 1,null,INGREDIENT,gr,chef-01
+element-02,true,Rice,IN:AAA-002,This is an ingredient,EUR 2,null,INGREDIENT,kg,chef-02
+element-03,true,Sugar,IN:AAA-003,This is an ingredient,USD 1,http://example.com,INGREDIENT,gr,chef-03
+element-04,true,Eggs,IN:AAA-004,This is an ingredient,USD 3,null,INGREDIENT,uds,chef-01
+element-05,true,Milk,IN:AAA-005,This is an ingredient,GBP 2,http://example.com,INGREDIENT,l,chef-02
+element-06,false,Water,IN:AAA-006,This is an ingredient,EUR 1,http://example.com,INGREDIENT,l,chef-03
+element-07,false,Pasta,IN:AAA-007,This is an ingredient,USD 2,null,INGREDIENT,gr,chef-01
+element-08,false,Olive oil,IN:AAA-008,This is an ingredient,USD 5,http://example.com,INGREDIENT,ml,chef-02
+element-09,false,Flour,IN:AAA-009,This is an ingredient,GBP 2,null,INGREDIENT,gr,chef-03
+element-10,false,Butter,IN:AAA-010,This is an ingredient,GBP 4,http://example.com,INGREDIENT,gr,chef-01
+element-11,true,Spoon,KU:AAA-001,This is a kitchen utensil,EUR 3,null,KITCHEN_UTENSIL,uds,chef-01
+element-12,true,Knife,KU:AAA-002,This is a kitchen utensil,EUR 8,http://example.com,KITCHEN_UTENSIL,uds,chef-02
+element-13,true,Pot,KU:AAA-003,This is a kitchen utensil,USD 12,null,KITCHEN_UTENSIL,uds,chef-03
+element-14,true,Fork,KU:AAA-004,This is a kitchen utensil,USD 2,null,KITCHEN_UTENSIL,uds,chef-01
+element-15,true,Spatula,KU:AAA-005,This is a kitchen utensil,GBP 4,http://example.com,KITCHEN_UTENSIL,uds,chef-02
+element-16,false,Ladle,KU:AAA-006,This is a kitchen utensil,EUR 4,http://example.com,KITCHEN_UTENSIL,uds,chef-03
+element-17,false,Pan,KU:AAA-007,This is a kitchen utensil,USD 12,null,KITCHEN_UTENSIL,uds,chef-01
+element-18,false,Whisk,KU:AAA-008,This is a kitchen utensil,GBP 3,null,KITCHEN_UTENSIL,uds,chef-02
+element-19,false,Bowl,KU:AAA-009,This is a kitchen utensil,GBP 11,http://example.com,KITCHEN_UTENSIL,uds,chef-03
+element-20,false,Rolling pin,KU:AAA-010,This is a kitchen utensil,GBP 6,null,KITCHEN_UTENSIL,uds,chef-01

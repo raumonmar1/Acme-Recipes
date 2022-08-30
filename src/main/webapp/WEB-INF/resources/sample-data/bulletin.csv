@@ -1,0 +1,11 @@
+key,moment,heading,piece-of-text,flag,info
+bulletin-01,2022/01/01 15:00,Bulletin 1,Bulletin example 1,false,http://google.com
+bulletin-02,2022/02/15 16:00,Bulletin 2,Bulletin example 2,true,null
+bulletin-03,2020/03/07 10:00,Bulletin 3,Bulletin example 3,false,null
+bulletin-04,2016/01/01 08:00,Bulletin 4,Lorem ipsum dolor sit amet consectetur adipiscing elit,false,http://example.com
+bulletin-05,1900/01/01 19:00,Bulletin 5,A,true,null
+bulletin-06,1980/01/24 23:00,Bulletin 6,Ejemplo de boletin 6,false,null
+bulletin-07,1999/12/31 23:59,Bulletin 7,Lorem ipsum dolor sit amet consectetur adipiscing elit,true,http://example.com
+bulletin-08,2010/01/11 12:00,Bulletin 8,Ejemplo de boletin 8,true,http://google.com 
+bulletin-09,2022/08/04 11:00,Bulletin 9,Ejemplo de boletin 9,false,http://us.es
+bulletin-10,2022/07/23 03:00,Bulletin 10,Lorem ipsum dolor sit amet consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes nascetur ridiculus mus. Donec quam felis ultricies nec pellentesque eu pretium quis,true,null
