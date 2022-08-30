@@ -1,8 +1,5 @@
 package acme.entities.systemConfiguration;
 
-import java.util.List;
-import java.util.Map;
-
 import javax.persistence.Entity;
 import javax.validation.constraints.Digits;
 import javax.validation.constraints.NotBlank;
@@ -22,13 +19,13 @@ public class SystemConfiguration extends AbstractEntity{
 	private static final long serialVersionUID = 1L;
 	
 	@NotBlank
-	public List<String> acceptedCurrencies;
+	public String acceptedCurrencies;
 	
 	@NotBlank
 	public String systemCurrency;
 
 	@NotBlank
-	public Map<String, Double> spamTuples;
+	public String spamTuples;
 	
 	@NotNull
 	@Range(min = 0, max = 1)

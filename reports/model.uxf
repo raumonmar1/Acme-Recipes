@@ -306,8 +306,8 @@ bg=green</panel_attributes>
 Configuration
 --
 + systemCurrency: String {NotBlank}
-+ acceptedCurrencies: List&lt;String&gt; {NotBlank}
-+ spamTuples: Map&lt;String, Double&gt; {NotBlank}
++ acceptedCurrencies: String {NotBlank}
++ spamTuples: String {NotBlank}
 + spamThreshold: Double {Range(0, 1), Digits(1,2)}
 bg=green</panel_attributes>
     <additional_attributes/>
