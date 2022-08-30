@@ -5,11 +5,12 @@ import java.util.Date;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.ManyToOne;
+import javax.persistence.Temporal;
+import javax.persistence.TemporalType;
 import javax.validation.Valid;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Pattern;
-import javax.validation.constraints.Positive;
 
 import org.hibernate.validator.constraints.Length;
 import org.hibernate.validator.constraints.URL;
@@ -42,10 +43,17 @@ public class FineDish extends AbstractEntity {
 	@Length(min=1, max=255)
 	protected String request;
 	
-	@Positive
+	@Valid
+	@NotNull
 	protected Money budget;
 
-	protected Date period;
+	@Temporal(TemporalType.TIMESTAMP)
+	@NotNull
+	protected Date startDate;
+	
+	@Temporal(TemporalType.TIMESTAMP)
+	@NotNull
+	protected Date finishDate;
 	
 	@URL
 	protected String info;
