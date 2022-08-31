@@ -1,0 +1,15 @@
+any.element.list.label.tipo = Type
+any.element.list.label.name = Name
+any.element.list.label.code = Code
+any.element.list.label.amount-unit = amountUnit
+any.element.list.label.retail-price = Retail price
+
+any.element.form.label.tipo = Type:
+any.element.form.label.name = Name:
+any.element.form.label.code = Code:
+any.element.form.label.amount-unit = Amount Unit:
+any.element.form.label.description = Description:
+any.element.form.label.retail-price = Retail price:
+any.element.form.label.info = Info:
+any.element.form.label.chef = Chef:
+any.element.form.label.published = Published:
