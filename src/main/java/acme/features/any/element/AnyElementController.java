@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 
 import acme.entities.elements.Element;
+import acme.features.any.recipe.AnyRecipeElementListService;
 import acme.framework.controllers.AbstractController;
 import acme.framework.roles.Any;
 
@@ -22,16 +23,16 @@ public class AnyElementController extends AbstractController<Any, Element>{
 	protected AnyElementShowService	showService;
 	
 	
-//	@Autowired
-//	protected AnyRecipeElementListService recipeElementListService;
+	@Autowired
+	protected AnyRecipeElementListService recipeElementListService;
 
-	// Constructors -----------------------------------------------------------
+//	 Constructors -----------------------------------------------------------
 
 
 	@PostConstruct
 	protected void initialise() {
 		super.addCommand("list", this.elementListPublishedService);
-//		super.addCommand("listRecipeElements", "list", this.recipeElementListService);
+		super.addCommand("listRecipeElements", "list", this.recipeElementListService);
 		super.addCommand("show", this.showService);
 	}
 
