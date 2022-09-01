@@ -3,13 +3,4 @@ any.peep.list.label.writer = Writer
 any.peep.list.label.moment = Moment
 any.peep.list.label.pieceOfText = PieceOfText
 any.peep.list.label.email = Email
-
-any.peep.form.label.heading = Heading
-any.peep.form.label.writer = Writer
-any.peep.form.label.pieceOfText = PieceOfText
-any.peep.form.label.email = Email
-any.peep.form.label.confirmation = Confirm that the peep is correct
-any.peep.form.button.create = Create
-any.peep.list.button.create = Create
-any.Peep.confirmation.error = Please, mark the checkbox
 	

@@ -22,6 +22,7 @@ public class AnyPeepListRecentService implements AbstractListService<Any, Peep> 
 	@Override 
 	public boolean authorise(final Request<Peep> request) { 
 		assert request != null; 
+		
 		return true; 
 	} 
  
@@ -37,7 +38,7 @@ public class AnyPeepListRecentService implements AbstractListService<Any, Peep> 
 		calendar.add(Calendar.MONTH, -1); 
 		fechaLimite=calendar.getTime(); 
 		 
-		result=this.repository.findRecentPeep(fechaLimite); 
+		result=this.repository.findRecentPeeps(fechaLimite); 
 		 
 		return result; 
 	} 
@@ -47,6 +48,7 @@ public class AnyPeepListRecentService implements AbstractListService<Any, Peep> 
 		assert request != null; 
 		assert entity != null; 
 		assert model != null; 
-		request.unbind(entity, model, "header","moment", "pieceOfText", "writer", "email");		 
+		
+		request.unbind(entity, model, "heading", "moment", "pieceOfText", "writer", "email");		 
 	} 
 }

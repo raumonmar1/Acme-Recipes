@@ -136,9 +136,9 @@ bg=green</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>518</x>
+      <x>420</x>
       <y>406</y>
-      <w>168</w>
+      <w>266</w>
       <h>42</h>
     </coordinates>
     <panel_attributes>&lt;&lt;Entity&gt;&gt;
@@ -233,7 +233,7 @@ bg=green</panel_attributes>
     <panel_attributes>&lt;&lt;Entity&gt;&gt;
 Peep
 --
-+ moment: Date {NotNull, Temporal(TIMESTAMP)}
++ moment: Date {NotNull, Temporal(TIMESTAMP),Past}
 + heading: String {NotBlank, Length(1, 100}}
 + writer: String {NotBlank, Length(1, 100}}
 + pieceOfText: String {NotBlank, Length(1, 255}}

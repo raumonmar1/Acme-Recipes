@@ -10,5 +10,3 @@
 	<acme:list-column code="any.peep.list.label.pieceOfText" path="pieceOfText" width="20%"/>	
 	<acme:list-column code="any.peep.list.label.email" path="email" width="20%"/>	
 </acme:list>
-
-<acme:button code="any.peep.list.button.create" action="/any/peep/create"/>
