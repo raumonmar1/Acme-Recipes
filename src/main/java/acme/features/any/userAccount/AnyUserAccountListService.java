@@ -13,7 +13,7 @@ import acme.framework.roles.UserRole;
 import acme.framework.services.AbstractListService;
 
 @Service
-public class AnyUserAccountListEnabledService implements AbstractListService<Any, UserAccount> {
+public class AnyUserAccountListService implements AbstractListService<Any, UserAccount> {
 
 	// Internal state ---------------------------------------------------------
 
@@ -42,16 +42,9 @@ public class AnyUserAccountListEnabledService implements AbstractListService<Any
 		roles = entity.getRoles();
 		buffer = new StringBuilder();
 		
-		int i = roles.size();
-		
 		for (final UserRole rol : roles) {
 				buffer.append(rol.getAuthorityName());
-				
-				if(i > 1) {
-					buffer.append(", ");
-					i--;
-				}
-			
+				buffer.append(" ");
 		}
 		
 		model.setAttribute("roles", buffer.toString());

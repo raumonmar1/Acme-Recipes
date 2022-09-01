@@ -2,3 +2,4 @@ key,organisation,assertion,info,key:userAccount
 epicure-01,Acme Inc.,Assertion epicure-01,http://example.com,user-account-epicure-01
 epicure-02,Acme Inc.,Assertion epicure-02,null,user-account-epicure-02
 epicure-03,Acme Inc.,Assertion epicure-03,http://example.com,user-account-epicure-03
+epicure-04,Acme Inc.,Assertion chef-03,http://example.com,user-account-chef-03

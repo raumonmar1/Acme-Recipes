@@ -16,7 +16,7 @@ public class AnyUserAccountController extends AbstractController<Any, UserAccoun
 	// Internal state ---------------------------------------------------------
 
 	@Autowired
-	protected AnyUserAccountListEnabledService	listService;
+	protected AnyUserAccountListService	listService;
 
 	@Autowired
 	protected AnyUserAccountShowService	showService;

@@ -6,7 +6,6 @@ import org.springframework.stereotype.Service;
 import acme.framework.components.models.Model;
 import acme.framework.controllers.Request;
 import acme.framework.entities.UserAccount;
-import acme.framework.roles.Administrator;
 import acme.framework.roles.Any;
 import acme.framework.services.AbstractShowService;
 
@@ -24,17 +23,8 @@ public class AnyUserAccountShowService implements AbstractShowService<Any, UserA
 	@Override
 	public boolean authorise(final Request<UserAccount> request) {
 		assert request != null;
-		boolean result = true;
-		final int id = request.getModel().getInteger("id");
-		final UserAccount userAccount = this.repository.findOneUserAccountById(id);
-		final boolean isAnonymous = userAccount.isAnonymous();
-		final boolean isAdministrator = userAccount.hasRole(Administrator.class);
 		
-		if(!userAccount.isEnabled() || isAnonymous || isAdministrator) {
-			result = false;
-		}
-		
-		return result;
+		return true;
 	}
 
 	@Override
@@ -46,8 +36,7 @@ public class AnyUserAccountShowService implements AbstractShowService<Any, UserA
 
 		id = request.getModel().getInteger("id");
 		result = this.repository.findOneUserAccountById(id);
-		result.getRoles().forEach(r -> {
-		});
+		result.getRoles().forEach(r -> { });
 
 		return result;
 	}
