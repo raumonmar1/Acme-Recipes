@@ -34,6 +34,7 @@ master.menu.administrator.shut-down = Parar el sistema
 master.menu.administrator = Cualquiera
 master.menu.any.user-accounts = Cuentas de usuario
 master.menu.any.peep = Listar peeps recientes
+master.menu.any.element = Listar Elementos
 
 # master.menu.provider ########################################################
 

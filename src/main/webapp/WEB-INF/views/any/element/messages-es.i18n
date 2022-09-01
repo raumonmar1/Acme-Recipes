@@ -1,10 +1,10 @@
-any.element.list.label.tipo = Tipo
+any.element.list.label.type = Tipo
 any.element.list.label.name = Nombre
 any.element.list.label.code = Código
 any.element.list.label.amount-unit = Cantidad unidad
 any.element.list.label.retail-price = Precio de venta
 
-any.element.form.label.tipo = Tipo:
+any.element.form.label.type = Tipo:
 any.element.form.label.name = Nombre:
 any.element.form.label.code = Código:
 any.element.form.label.amount-unit = Cantidad unidad:
