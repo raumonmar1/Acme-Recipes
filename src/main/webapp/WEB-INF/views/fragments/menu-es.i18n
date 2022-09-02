@@ -40,12 +40,13 @@ master.menu.administrator = Cualquiera
 master.menu.any.user-accounts = Cuentas de usuario
 master.menu.any.peep = Listar peeps recientes
 master.menu.any.element = Listar Elementos
-master.menu.any.recipe = List Recipes
+master.menu.any.recipe = Listar Recipes
 
 # master.menu.chef ##########################################################
 
 master.menu.chef = Chef
 master.menu.chef.fine-dish = Listar platos recomendados
+master.menu.chef.memorandum = Listar informes
 
 # master.menu.provider ########################################################
 
