@@ -16,7 +16,7 @@ public interface AnyElementRepository extends AbstractRepository{
 	Collection<Element> findManyPublishedElements(@Param("published")boolean published);
 
 	@Query("select e from Element e where e.id = :id")
-	Element findOneElementById(int id);
+	Element findOneElementById(@Param("id")int id);
 	
 	@Query("select sc.systemCurrency from SystemConfiguration sc")
 	String findSystemCurrency();
