@@ -1,0 +1,9 @@
+authenticated.bulletin.form.label.heading = Título
+authenticated.bulletin.form.label.moment = Fecha de creación
+authenticated.bulletin.form.label.pieceOfText = Pieza de texto
+authenticated.bulletin.form.label.flag = Crítico
+authenticated.bulletin.form.label.info = Info
+
+authenticated.bulletin.list.label.moment = Fecha de creación
+authenticated.bulletin.list.label.heading = Título
+authenticated.bulletin.list.label.flag = Crítico
