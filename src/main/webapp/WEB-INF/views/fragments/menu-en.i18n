@@ -39,13 +39,14 @@ master.menu.authenticated.bulletin = List recent bulletins
 master.menu.any = Any
 master.menu.any.user-accounts = User accounts
 master.menu.any.peep = List Recent Peeps
-master.menu.any.element = Listar Elementos
-master.menu.any.recipe = Listar Recetas
+master.menu.any.element = List Elementos
+master.menu.any.recipe = List Recetas
 
 # master.menu.chef ##########################################################
 
 master.menu.chef = Chef
 master.menu.chef.fine-dish = List FineDishes
+master.menu.chef.memorandum = List Memorandum
 
 # master.menu.provider ########################################################
 
