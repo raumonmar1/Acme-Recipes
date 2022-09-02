@@ -33,6 +33,7 @@ master.menu.administrator.shut-down = Parar el sistema
 
 master.menu.authenticated = Autenticado
 master.menu.authenticated.bulletin = Listar boletines recientes
+master.menu.authenticated.systemConfiguration = Configuración del sistema
 
 # master.menu.any #############################################################
 
