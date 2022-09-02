@@ -25,6 +25,7 @@ master.menu.anonymous.favourite-link-raul = 47428674Y: Montalbán Martín, Raúl
 
 master.menu.administrator = Administrador
 master.menu.administrator.dashboard = Panel de indicadores
+master.menu.administrator.systemConfiguration = Configuraci�n del sistema
 master.menu.administrator.populate-initial = Poblar BD (inicial)
 master.menu.administrator.populate-sample = Poblar BD (ejemplos)
 master.menu.administrator.shut-down = Parar el sistema
