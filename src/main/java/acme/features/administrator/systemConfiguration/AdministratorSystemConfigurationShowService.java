@@ -1,4 +1,4 @@
-package acme.features.authenticated.systemConfiguration;
+package acme.features.administrator.systemConfiguration;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -6,14 +6,14 @@ import org.springframework.stereotype.Service;
 import acme.entities.systemConfiguration.SystemConfiguration;
 import acme.framework.components.models.Model;
 import acme.framework.controllers.Request;
-import acme.framework.roles.Authenticated;
+import acme.framework.roles.Administrator;
 import acme.framework.services.AbstractShowService;
 
 @Service
-public class AuthenticatedSystemConfigurationShowService implements AbstractShowService<Authenticated, SystemConfiguration> {
+public class AdministratorSystemConfigurationShowService implements AbstractShowService<Administrator, SystemConfiguration> {
 
 	@Autowired
-	protected AuthenticatedSystemConfigurationRepository repository;
+	protected AdministratorSystemConfigurationRepository repository;
 	
 	@Override
 	public boolean authorise(final Request<SystemConfiguration> request) {
@@ -38,11 +38,10 @@ public class AuthenticatedSystemConfigurationShowService implements AbstractShow
 		assert entity != null;
 		assert model != null;
 		
-		request.unbind(entity, model, "acceptedCurrencies", "systemCurrency", "moneyExchangeName", "moneyExchangeLink");
+		request.unbind(entity, model, "acceptedCurrencies", "systemCurrency", "spamTuples", "spamThreshold",
+			"moneyExchangeName", "moneyExchangeLink");
 		
 		model.setAttribute("confirmation", false);
         model.setAttribute("readonly", true);
 	}
-
-	
 }
