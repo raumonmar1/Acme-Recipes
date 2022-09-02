@@ -38,7 +38,8 @@ master.menu.authenticated.bulletin = List recent bulletins
 
 master.menu.any = Any
 master.menu.any.user-accounts = User accounts
-master.menu.any.peep = List recent Peeps
+master.menu.any.peep = List Recent Peeps
+master.menu.any.element = Listar Elementos
 
 # master.menu.provider ########################################################
 

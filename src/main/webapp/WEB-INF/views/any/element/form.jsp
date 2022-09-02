@@ -5,7 +5,7 @@
 <%@taglib prefix="acme" uri="urn:jsptagdir:/WEB-INF/tags"%>
 
 <acme:form>
-	<acme:input-select code="any.element.form.label.tipo" path="tipo">
+	<acme:input-select code="any.element.form.label.type" path="tipo">
 		<acme:input-option code="INGREDIENT" value="INGREDIENT" selected="${tipo == 'INGREDIENT'}"/>
 		<acme:input-option code="KITCHEN_UTENSIL" value="KITCHEN_UTENSIL" selected="${tipo == 'KITCHEN_UTENSIL'}"/>
 	</acme:input-select>
