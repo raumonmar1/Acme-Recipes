@@ -40,6 +40,7 @@
 			<acme:menu-suboption code="master.menu.any.user-accounts" action="/any/user-account/list"/>
 			<acme:menu-suboption code="master.menu.any.peep" action="/any/peep/list"/>
 			<acme:menu-suboption code="master.menu.any.element" action="/any/element/list"/>
+			<acme:menu-suboption code="master.menu.any.recipe" action="/any/recipe/list"/>
 		</acme:menu-option>
 
 		<acme:menu-option code="master.menu.provider" access="hasRole('Provider')">

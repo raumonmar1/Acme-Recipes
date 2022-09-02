@@ -3,6 +3,7 @@ package acme.features.any.recipe;
 import java.util.Collection;
 
 import org.springframework.data.jpa.repository.Query;
+import org.springframework.data.repository.query.Param;
 import org.springframework.stereotype.Repository;
 
 import acme.entities.elements.Element;
@@ -14,10 +15,10 @@ import acme.framework.repositories.AbstractRepository;
 public interface AnyRecipeRepository extends AbstractRepository{
 		
 		@Query("select r from Recipe r where r.published = :published")
-		Collection<Recipe> findManyPublishedRecipes(boolean published);
+		Collection<Recipe> findManyPublishedRecipes(@Param("published")boolean published);
 
 		@Query("select q.element from Quantity q where q.recipe.id = :recipeId")
-		Collection<Element> findManyElementsByRecipeId(int recipeId);
+		Collection<Element> findManyElementsByRecipeId(@Param("recipeId")int recipeId);
 
 		@Query("select r from Recipe r where r.id = :id")
 		Recipe findOneRecipeById(int id);
@@ -27,7 +28,7 @@ public interface AnyRecipeRepository extends AbstractRepository{
 		
 		@Query("Select q.element from Quantity q where q.id = :id")
 		 Collection<Element> findManyElementByQuantityId(int id);
-		
+					
 		@Query("select sc.systemCurrency from SystemConfiguration sc")
 		String findSystemCurrency();		
 }

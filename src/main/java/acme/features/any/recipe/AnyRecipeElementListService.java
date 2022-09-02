@@ -53,7 +53,7 @@ public class AnyRecipeElementListService implements AbstractListService<Any, Ele
 		
 		
  
-		request.unbind(entity, model, "tipo", "name","code", "amountUnit", "retailPrice"); 
+		request.unbind(entity, model, "type", "name","code", "amountUnit", "retailPrice"); 
 		 
 	}
 
