@@ -32,6 +32,10 @@
 			<acme:menu-suboption code="master.menu.administrator.shut-down" action="/administrator/shut-down"/>
 		</acme:menu-option>
 		
+		<acme:menu-option code="master.menu.authenticated" access="isAuthenticated()">
+			<acme:menu-suboption code="master.menu.authenticated.bulletin" action="/authenticated/bulletin/list"/>
+		</acme:menu-option>
+		
 		<acme:menu-option code="master.menu.any" access="hasRole('Any')">
 			<acme:menu-suboption code="master.menu.any.user-accounts" action="/any/user-account/list"/>
 			<acme:menu-suboption code="master.menu.any.peep" action="/any/peep/list"/>
@@ -51,7 +55,6 @@
 		<acme:menu-option code="master.menu.sign-in" action="/master/sign-in" access="isAnonymous()"/>
 
 		<acme:menu-option code="master.menu.user-account" access="isAuthenticated()">
-			<!--<acme:menu-suboption code="master.menu.user-account.general-data" action="/authenticated/user-account/update"/>-->
 			<acme:menu-suboption code="master.menu.user-account.become-provider" action="/authenticated/provider/create" access="!hasRole('Provider')"/>
 			<acme:menu-suboption code="master.menu.user-account.provider" action="/authenticated/provider/update" access="hasRole('Provider')"/>
 			<acme:menu-suboption code="master.menu.user-account.become-consumer" action="/authenticated/consumer/create" access="!hasRole('Consumer')"/>

@@ -1,0 +1,9 @@
+authenticated.bulletin.form.label.heading = Heading
+authenticated.bulletin.form.label.moment = Moment
+authenticated.bulletin.form.label.pieceOfText = Piece of text
+authenticated.bulletin.form.label.flag = Critical
+authenticated.bulletin.form.label.info = Info
+
+authenticated.bulletin.list.label.moment = Moment
+authenticated.bulletin.list.label.heading = Heading
+authenticated.bulletin.list.label.flag = Critical
