@@ -40,10 +40,10 @@ public class AdministratorDashboard implements Serializable {
 	
 //	FINE DISHES: Total number, average, deviation, minimum and maximum retail.
 	
-	Map<FineDishStatus, Integer> totalNumberOfProposedFineDishes;
-	Map<Pair<FineDishStatus,String>, Double> averageBudgetOfProposedFineDishes;
-	Map<Pair<FineDishStatus,String>, Double> deviationBudgetOfProposedFineDishes;
-	Map<Pair<FineDishStatus,String>, Double> minimumBudgetOfProposedFineDishes;
-	Map<Pair<FineDishStatus,String>, Double> maximumBudgetOfProposedFineDishes;
+	Map<FineDishStatus, Integer> totalNumberOfFineDishesByStatus;
+	Map<Pair<FineDishStatus,String>, Double> averageBudgetOfFineDishesByStatus;
+	Map<Pair<FineDishStatus,String>, Double> deviationBudgetOfFineDishesByStatus;
+	Map<Pair<FineDishStatus,String>, Double> minimumBudgetOfFineDishesByStatus;
+	Map<Pair<FineDishStatus,String>, Double> maximumBudgetOfFineDishesByStatus;
 
 }
