@@ -16,33 +16,33 @@ public interface AdministratorDashboardRepository extends AbstractRepository{
 	@Query("SELECT count(e) FROM Element e WHERE e.type = 'INGREDIENT'")
 	Integer totalNumberOfIngredients();
 	
-	@Query("SELECT avg(e.retailPrice.amount), e.retailPrice.currency FROM Element e WHERE e.type = 'INGREDIENT' GROUP BY e.retailPrice.currency")
-	Collection<Tuple> averageRetailPriceOfComponents();
+	@Query("SELECT e.retailPrice.currency, avg(e.retailPrice.amount)  FROM Element e WHERE e.type = 'INGREDIENT' GROUP BY e.retailPrice.currency")
+	Collection<Tuple> averageRetailPriceOfIngredientsByCurrency();
 	
-	@Query("SELECT stddev(e.retailPrice.amount), e.retailPrice.currency FROM Element e WHERE e.type = 'INGREDIENT' GROUP BY e.retailPrice.currency")
-	Collection<Tuple> deviationRetailPriceOfComponents();
+	@Query("SELECT e.retailPrice.currency, stddev(e.retailPrice.amount) FROM Element e WHERE e.type = 'INGREDIENT' GROUP BY e.retailPrice.currency")
+	Collection<Tuple> deviationRetailPriceOfIngredientsByCurrency();
 
-	@Query("SELECT min(e.retailPrice.amount), e.retailPrice.currency FROM Element e WHERE e.type = 'INGREDIENT' GROUP BY e.retailPrice.currency")
-	Collection<Tuple> minimumRetailPriceOfComponents();
+	@Query("SELECT e.retailPrice.currency, min(e.retailPrice.amount) FROM Element e WHERE e.type = 'INGREDIENT' GROUP BY e.retailPrice.currency")
+	Collection<Tuple> minimumRetailPriceOfIngredientsByCurrency();
 
-	@Query("SELECT max(e.retailPrice.amount), e.retailPrice.currency FROM Element e WHERE e.type = 'INGREDIENT' GROUP BY e.retailPrice.currency")
-	Collection<Tuple> maximumRetailPriceOfComponents();
+	@Query("SELECT e.retailPrice.currency, max(e.retailPrice.amount) FROM Element e WHERE e.type = 'INGREDIENT' GROUP BY e.retailPrice.currency")
+	Collection<Tuple> maximumRetailPriceOfIngredientsByCurrency();
 	
 	//Kitchen Utensils
 	@Query("SELECT count(e) FROM Element e WHERE e.type = 'KITCHEN UTENSIL'")
 	int totalNumberOfKitchenUtensils();
 
-	@Query("SELECT avg(e.retailPrice.amount), e.retailPrice.currency FROM Element e WHERE e.type = 'KITCHEN UTENSIL' GROUP BY e.retailPrice.currency")
-	Collection<Tuple> averageRetailPriceOfTools();
+	@Query("SELECT e.retailPrice.currency, avg(e.retailPrice.amount) FROM Element e WHERE e.type = 'KITCHEN UTENSIL' GROUP BY e.retailPrice.currency")
+	Collection<Tuple> averageRetailPriceOfKitchenUtensilsByCurrency();
 
-	@Query("SELECT stddev(e.retailPrice.amount), e.retailPrice.currency FROM Element e WHERE e.type = 'KITCHEN UTENSIL' GROUP BY e.retailPrice.currency")
-	Collection<Tuple> deviationRetailPriceOfTools();
+	@Query("SELECT e.retailPrice.currency, stddev(e.retailPrice.amount) FROM Element e WHERE e.type = 'KITCHEN UTENSIL' GROUP BY e.retailPrice.currency")
+	Collection<Tuple> deviationRetailPriceOfKitchenUtensilsByCurrency();
 
-	@Query("SELECT min(e.retailPrice.amount), e.retailPrice.currency FROM Element e WHERE e.type = 'KITCHEN UTENSIL' GROUP BY e.retailPrice.currency")
-	Collection<Tuple> minimumRetailPriceOfTools();
+	@Query("SELECT e.retailPrice.currency, min(e.retailPrice.amount) FROM Element e WHERE e.type = 'KITCHEN UTENSIL' GROUP BY e.retailPrice.currency")
+	Collection<Tuple> minimumRetailPriceOfKitchenUtensilsByCurrency();
 
-	@Query("SELECT max(e.retailPrice.amount), e.retailPrice.currency FROM Element e WHERE e.type = 'KITCHEN UTENSIL' GROUP BY e.retailPrice.currency")
-	Collection<Tuple> maximumRetailPriceOfTools();
+	@Query("SELECT e.retailPrice.currency, max(e.retailPrice.amount) FROM Element e WHERE e.type = 'KITCHEN UTENSIL' GROUP BY e.retailPrice.currency")
+	Collection<Tuple> maximumRetailPriceOfKitchenUtensilsByCurrency();
 	
 	//Fine Dishes
 	@Query("SELECT f.status, count(f) FROM FineDish f GROUP BY f.status")
@@ -60,4 +60,7 @@ public interface AdministratorDashboardRepository extends AbstractRepository{
 	@Query("SELECT f.status, f.budget.currency, max(f.budget.amount) FROM FineDish f GROUP BY f.status")
 	Collection<Tuple> maximumBudgetOfFineDishesByStatus();
 	
+	//SystemConfiguration
+	@Query("SELECT s.acceptedCurrencies FROM SystemConfiguration s")
+	String findSystemCurrencies();
 }
