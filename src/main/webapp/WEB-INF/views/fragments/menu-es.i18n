@@ -47,6 +47,7 @@ master.menu.any.recipe = Listar Recipes
 master.menu.chef = Chef
 master.menu.chef.fine-dish = Listar platos recomendados
 master.menu.chef.memorandum = Listar informes
+master.menu.chef.element = Listar elementos
 
 # master.menu.provider ########################################################
 
