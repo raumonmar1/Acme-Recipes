@@ -45,10 +45,15 @@ master.menu.any.recipe = List Recetas
 # master.menu.chef ##########################################################
 
 master.menu.chef = Chef
-master.menu.chef.fine-dish = List FineDishes
+master.menu.chef.fine-dish = List Fine Dishes
 master.menu.chef.memorandum = List Memorandums
 master.menu.chef.element = List Elements
 master.menu.chef.recipe = List Recipes
+
+# master.menu.epicure ##########################################################
+
+master.menu.epicure = Epicure
+master.menu.epicure.fine-dish = List Fine Dishes
 
 # master.menu.provider ########################################################
 

@@ -49,7 +49,11 @@
 			<acme:menu-suboption code="master.menu.chef.element" action="/chef/element/list"/>
 			<acme:menu-suboption code="master.menu.chef.recipe" action="/chef/recipe/list"/>
 		</acme:menu-option>
-
+		
+		<acme:menu-option code="master.menu.epicure" access="hasRole('Epicure')">
+			<acme:menu-suboption code="master.menu.epicure.fine-dish" action="/epicure/fine-dish/list"/>
+		</acme:menu-option>
+		
 		<acme:menu-option code="master.menu.provider" access="hasRole('Provider')">
 			<acme:menu-suboption code="master.menu.provider.favourite-link" action="http://www.example.com/"/>
 		</acme:menu-option>
