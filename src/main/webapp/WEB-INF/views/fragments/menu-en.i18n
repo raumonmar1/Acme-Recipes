@@ -48,6 +48,7 @@ master.menu.chef = Chef
 master.menu.chef.fine-dish = List FineDishes
 master.menu.chef.memorandum = List Memorandums
 master.menu.chef.element = List Elements
+master.menu.chef.recipe = List Recipes
 
 # master.menu.provider ########################################################
 

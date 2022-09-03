@@ -1,0 +1,15 @@
+chef.recipe.list.label.code = Code
+chef.recipe.list.label.description = Description
+chef.recipe.list.label.preparation-notes = Preparation Notes
+chef.recipe.list.label.link = Link
+chef.recipe.list.label.chef = Chef
+
+chef.recipe.form.label.code = Code:
+chef.recipe.form.label.description = Description:
+chef.recipe.form.label.preparation-notes = Preparation Notes:
+chef.recipe.form.label.link = Link:
+chef.recipe.form.label.chef = Chef:
+chef.recipe.form.label.retail-price = Retail Price
+chef.recipe.form.button.elements = Elements
+chef.recipe.form.label.published = Published
+
