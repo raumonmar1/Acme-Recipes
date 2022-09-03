@@ -47,6 +47,7 @@
 			<acme:menu-suboption code="master.menu.chef.fine-dish" action="/chef/fine-dish/list"/>
 			<acme:menu-suboption code="master.menu.chef.memorandum" action="/chef/memorandum/list"/>
 			<acme:menu-suboption code="master.menu.chef.element" action="/chef/element/list"/>
+			<acme:menu-suboption code="master.menu.chef.recipe" action="/chef/recipe/list"/>
 		</acme:menu-option>
 
 		<acme:menu-option code="master.menu.provider" access="hasRole('Provider')">

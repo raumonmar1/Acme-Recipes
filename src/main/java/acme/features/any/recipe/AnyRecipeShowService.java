@@ -50,7 +50,7 @@ public class AnyRecipeShowService implements AbstractShowService<Any, Recipe>{
 //			model.setAttribute("retailPrice",entity.getRetailPrice());
 			
 			request.unbind(entity, model, "code", "heading", "description", "preparationNotes", "published",
-				"info", "chef.userAccount.username");
+				"link", "chef.userAccount.username");
 			
 		}
 		

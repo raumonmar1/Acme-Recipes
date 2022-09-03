@@ -21,13 +21,13 @@ public interface AnyRecipeRepository extends AbstractRepository{
 		Collection<Element> findManyElementsByRecipeId(@Param("recipeId")int recipeId);
 
 		@Query("select r from Recipe r where r.id = :id")
-		Recipe findOneRecipeById(int id);
+		Recipe findOneRecipeById(@Param("id")int id);
 		
 		@Query("select q from Quantity q where q.recipe.id = :id")
-		Collection<Quantity> findQuantityByRecipeId(int id);
+		Collection<Quantity> findQuantityByRecipeId(@Param("id")int id);
 		
 		@Query("Select q.element from Quantity q where q.id = :id")
-		 Collection<Element> findManyElementByQuantityId(int id);
+		 Collection<Element> findManyElementByQuantityId(@Param("id")int id);
 					
 		@Query("select sc.systemCurrency from SystemConfiguration sc")
 		String findSystemCurrency();		
