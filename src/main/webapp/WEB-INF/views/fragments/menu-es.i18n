@@ -50,6 +50,11 @@ master.menu.chef.memorandum = Listar informes
 master.menu.chef.element = Listar elementos
 master.menu.chef.recipe = Listar Recetas
 
+# master.menu.epicure ##########################################################
+
+master.menu.epicure = Epicure
+master.menu.epicure.fine-dish = Listar platos recomendados
+
 # master.menu.provider ########################################################
 
 master.menu.provider = Proveedor
