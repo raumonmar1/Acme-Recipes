@@ -1,0 +1,18 @@
+chef.element.list.label.type = Tipo
+chef.element.list.label.name = Nombre
+chef.element.list.label.code = Código
+chef.element.list.label.amount-unit = Unidad de cantidad
+chef.element.list.label.description = Descripción
+chef.element.list.label.retail-price = Precio al por menor
+chef.element.list.label.link = Enlace
+chef.element.list.label.chef = Chef
+
+chef.element.form.label.type = Tipo:
+chef.element.form.label.name = Nombre:
+chef.item.form.label.code = Código:
+chef.element.form.label.amount-unit = Unidad de cantidad:
+chef.element.form.label.description = Descripción:
+chef.element.form.label.retail-price = Precio al por menor:
+chef.element.form.label.link = Enlace:
+chef.element.form.label.chef = Chef:
+chef.element.form.label.published = Publicado:
