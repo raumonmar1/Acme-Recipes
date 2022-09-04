@@ -143,7 +143,7 @@
 			<acme:message code="administrator.dashboard.form.label.total-number-of-fine-dishes-by-status"/>
 		</th> 
 		
-	<!--</tr>
+	</tr>
 	<tr>
 		<td>
 			<div>
@@ -151,63 +151,56 @@
 			</div>
 		</td>
 	</tr>
+
 	
-	<tr>
-		<th scope="row">
-			<acme:message code="administrator.dashboard.form.label.average-budget-of-fine-dishes-by-status"/>
-		</th>
+	<jstl:forEach items="${averageBudgetOfFineDishesByStatus.keySet() }" var="key">
+		<tr>
+			<jstl:set value="${averageBudgetOfFineDishesByStatus.get(key) }"
+				var="amount" />
+			<jstl:if test="${amount > 0}">
+				<th scope="row">
+				<acme:message code="administrator.dashboard.form.status.average.${key.getFirst()}.${key.getSecond()}" />
+				<td><acme:print value="${ amount }" /></td>
+			</jstl:if>
+		</tr>
+	</jstl:forEach>
+	
+	<jstl:forEach items="${deviationBudgetOfFineDishesByStatus.keySet() }" var="key">
+		<tr>
+			<jstl:set value="${deviationBudgetOfFineDishesByStatus.get(key) }"
+				var="amount" />
+			<jstl:if test="${amount > 0}">
+				<th scope="row">
+				<acme:message code="administrator.dashboard.form.status.deviation.${key.getFirst()}.${key.getSecond()}" />
+				<td><acme:print value="${ amount }" /></td>
+			</jstl:if>
+		</tr>
+	</jstl:forEach>
+	
+	<jstl:forEach items="${minimunBudgetOfFineDishesByStatus.keySet() }" var="key">
+		<tr>
+			<jstl:set value="${minimunBudgetOfFineDishesByStatus.get(key) }"
+				var="amount" />
+			<jstl:if test="${amount > 0}">
+				<th scope="row">
+				<acme:message code="administrator.dashboard.form.status.minimum.${key.getFirst()}.${key.getSecond()}" />
+				<td><acme:print value="${ amount }" /></td>
+			</jstl:if>
+		</tr>
+	</jstl:forEach>
+	
+	<jstl:forEach items="${maximumBudgetOfFineDishesByStatus.keySet() }" var="key">
+		<tr>
+			<jstl:set value="${maximumBudgetOfFineDishesByStatus.get(key) }"
+				var="amount" />
+			<jstl:if test="${amount > 0}">
+				<th scope="row">
+				<acme:message code="administrator.dashboard.form.status.maximum.${key.getFirst()}.${key.getSecond()}" />
+				<td><acme:print value="${ amount }" /></td>
+			</jstl:if>
+		</tr>
+	</jstl:forEach>
 		
-	</tr>
-	<tr>
-		<td>
-			<div>
-				<canvas id="averageBudgetOfFineDishesByStatus"></canvas>
-			</div>
-		</td>
-	</tr>
-	
-	<tr>
-		<th scope="row">
-			<acme:message code="administrator.dashboard.form.label.deviation-budget-of-fine-dishes-by-status"/>
-		</th>
-		
-	</tr>
-	<tr>
-		<td>
-			<div>
-				<canvas id="deviationBudgetOfFineDishesByStatus"></canvas>
-			</div>
-		</td>
-	</tr>
-	
-	<tr>
-		<th scope="row">
-			<acme:message code="administrator.dashboard.form.label.minimum-budget-of-fine-dishes-by-status"/>
-		</th>
-		
-	</tr>
-	<tr>
-		<td>
-			<div>
-				<canvas id="minimumBudgetOfFineDishesByStatus"></canvas>
-			</div>
-		</td>
-	</tr>
-	
-	<tr>
-		<th scope="row">
-			<acme:message code="administrator.dashboard.form.label.maximum-budget-of-fine-dishes-by-status"/>
-		</th>
-		
-	</tr>
-	<tr>
-		<td>
-			<div>
-				<canvas id="maximumBudgetOfFineDishesByStatus"></canvas>
-			</div>
-		</td>
-	</tr> -->
-	
 </table>
 
 <script type="text/javascript">
@@ -251,118 +244,69 @@ $(document).ready(function() {
 	
 	}
 	
-	let averageIngredientsLabel = [
-		<jstl:forEach items="${averageRetailPriceOfIngredientsByCurrency}" var="averageRetailPriceOfIngredientsByCurrency">
-			<acme:print value="${averageRetailPriceOfIngredientsByCurrency['key']}"></acme:print>
-			<acme:print value=","></acme:print>
+	var averageIngredients = {
+		<jstl:forEach items="${averageRetailPriceOfIngredientsByCurrency}" var="item" varStatus="loop">
+ 	      ${item.key}: '${item.value}' ${not loop.last ? ',' : ''}
 		</jstl:forEach>
-	]
-	let averageIngredientsData = [
-		<jstl:forEach items="${averageRetailPriceOfIngredientsByCurrency}" var="averageRetailPriceOfIngredientsByCurrency">
-			<acme:print value="${averageRetailPriceOfIngredientsByCurrency['value'].toString()}"></acme:print>
-			<acme:print value=","></acme:print>
-		</jstl:forEach>
-	]
-	newChart(averageIngredientsLabel, averageIngredientsData, "averageRetailPriceOfIngredientsByCurrency");
+	};
+	newChart(Object.keys(averageIngredients), Object.values(averageIngredients), "averageRetailPriceOfIngredientsByCurrency");
 	
-	let deviationIngredientsLabel = [
-		<jstl:forEach items="${deviationRetailPriceOfIngredientsByCurrency}" var="deviationRetailPriceOfIngredientsByCurrency">
-			<acme:print value="${deviationRetailPriceOfIngredientsByCurrency['key']}"></acme:print>
-			<acme:print value=","></acme:print>
-		</jstl:forEach> 
-	]
-	let deviationIngredientsData = [
-		<jstl:forEach items="${deviationRetailPriceOfIngredientsByCurrency}" var="deviationRetailPriceOfIngredientsByCurrency">
-			<acme:print value="${deviationRetailPriceOfIngredientsByCurrency['value'].toString()}"></acme:print>
-			<acme:print value=","></acme:print>
-		</jstl:forEach>
-	]
-	newChart(deviationIngredientsLabel, deviationIngredientsData, "deviationRetailPriceOfIngredientsByCurrency");
+	var deviationIngredients = {
+			<jstl:forEach items="${deviationRetailPriceOfIngredientsByCurrency}" var="item" varStatus="loop">
+	 	      ${item.key}: '${item.value}' ${not loop.last ? ',' : ''}
+			</jstl:forEach>
+		};
+		newChart(Object.keys(deviationIngredients), Object.values(deviationIngredients), "deviationRetailPriceOfIngredientsByCurrency");
 	
-	let minimumIngredientsLabel = [
-		<jstl:forEach items="${minimumRetailPriceOfIngredientsByCurrency}" var="minimumRetailPriceOfIngredientsByCurrency">
-			<acme:print value="${minimumRetailPriceOfIngredientsByCurrency['key']}"></acme:print>
-			<acme:print value=","></acme:print>
-		</jstl:forEach>
-	]
-	let minimumIngredientsData = [
-		<jstl:forEach items="${minimumRetailPriceOfIngredientsByCurrency}" var="minimumRetailPriceOfIngredientsByCurrency">
-			<acme:print value="${minimumRetailPriceOfIngredientsByCurrency['value'].toString()}"></acme:print>
-			<acme:print value=","></acme:print>
-		</jstl:forEach>
-	]
-	newChart(minimumIngredientsLabel, minimumIngredientsData, "minimumRetailPriceOfIngredientsByCurrency");
+	var minimumIngredients = {
+			<jstl:forEach items="${minimumRetailPriceOfIngredientsByCurrency}" var="item" varStatus="loop">
+	 	      ${item.key}: '${item.value}' ${not loop.last ? ',' : ''}
+			</jstl:forEach>
+		};
+		newChart(Object.keys(minimumIngredients), Object.values(minimumIngredients), "minimumRetailPriceOfIngredientsByCurrency");
+		
+	var maximumIngredients = {
+			<jstl:forEach items="${maximumRetailPriceOfIngredientsByCurrency}" var="item" varStatus="loop">
+	 	      ${item.key}: '${item.value}' ${not loop.last ? ',' : ''}
+			</jstl:forEach>
+		};
+		newChart(Object.keys(maximumIngredients), Object.values(maximumIngredients), "maximumRetailPriceOfIngredientsByCurrency");
 	
-	let maximumIngredientsLabel = [
-		<jstl:forEach items="${maximumRetailPriceOfIngredientsByCurrency}" var="maximumRetailPriceOfIngredientsByCurrency">
-			<acme:print value="${maximumRetailPriceOfIngredientsByCurrency['key']}"></acme:print>
-			<acme:print value=","></acme:print>
-		</jstl:forEach>
-	]
-	let maximumIngredientsData = [
-		<jstl:forEach items="${maximumRetailPriceOfIngredientsByCurrency}" var="maximumRetailPriceOfIngredientsByCurrency">
-			<acme:print value="${maximumRetailPriceOfIngredientsByCurrency['value'].toString()}"></acme:print>
-			<acme:print value=","></acme:print>
-		</jstl:forEach>
-	]
-	newChart(maximumIngredientsLabel, maximumIngredientsData, "maximumRetailPriceOfIngredientsByCurrency");
-	
-	let averageKitchenUtensilsLabel = [
-		<jstl:forEach items="${averageRetailPriceOfKitchenUtensilsByCurrency}" var="averageRetailPriceOfKitchenUtensilsByCurrency">
-			<acme:print value="${averageRetailPriceOfKitchenUtensilsByCurrency['key']}"></acme:print>
-			<acme:print value=","></acme:print>
-		</jstl:forEach>
-	]
-	let averageKitchenUtensilsData = [
-		<jstl:forEach items="${averageRetailPriceOfKitchenUtensilsByCurrency}" var="averageRetailPriceOfKitchenUtensilsByCurrency">
-			<acme:print value="${averageRetailPriceOfKitchenUtensilsByCurrency['value'].toString()}"></acme:print>
-			<acme:print value=","></acme:print>
-		</jstl:forEach>
-	]
-	newChart(averageKitchenUtensilsLabel, averageKitchenUtensilsData, "averageRetailPriceOfKitchenUtensilsByCurrency");
+	var averageKitchenUtensils = {
+			<jstl:forEach items="${averageRetailPriceOfKitchenUtensilsByCurrency}" var="item" varStatus="loop">
+	 	      ${item.key}: '${item.value}' ${not loop.last ? ',' : ''}
+			</jstl:forEach>
+		};
+		newChart(Object.keys(averageKitchenUtensils), Object.values(averageKitchenUtensils), "averageRetailPriceOfKitchenUtensilsByCurrency");
 			
-	let deviationKitchenUtensilsLabel = [
-		<jstl:forEach items="${deviationRetailPriceOfKitchenUtensilsByCurrency}" var="deviationRetailPriceOfKitchenUtensilsByCurrency">
-			<acme:print value="${deviationRetailPriceOfKitchenUtensilsByCurrency['key']}"></acme:print>
-			<acme:print value=","></acme:print>
-		</jstl:forEach>
-	]
-	let deviationKitchenUtensilsData = [
-		<jstl:forEach items="${deviationRetailPriceOfKitchenUtensilsByCurrency}" var="deviationRetailPriceOfKitchenUtensilsByCurrency">
-			<acme:print value="${deviationRetailPriceOfKitchenUtensilsByCurrency['value'].toString()}"></acme:print>
-			<acme:print value=","></acme:print>
-		</jstl:forEach>
-	]
-	newChart(deviationKitchenUtensilsLabel, deviationKitchenUtensilsData, "deviationRetailPriceOfKitchenUtensilsByCurrency");
+	var deviationKitchenUtensils = {
+			<jstl:forEach items="${deviationRetailPriceOfKitchenUtensilsByCurrency}" var="item" varStatus="loop">
+	 	      ${item.key}: '${item.value}' ${not loop.last ? ',' : ''}
+			</jstl:forEach>
+		};
+		newChart(Object.keys(deviationKitchenUtensils), Object.values(deviationKitchenUtensils), "deviationRetailPriceOfKitchenUtensilsByCurrency");
 			
-	let minimumKitchenUtensilsLabel = [
-		<jstl:forEach items="${minimumRetailPriceOfKitchenUtensilsByCurrency}" var="minimumRetailPriceOfKitchenUtensilsByCurrency">
-			<acme:print value="${minimumRetailPriceOfKitchenUtensilsByCurrency['key']}"></acme:print>
-			<acme:print value=","></acme:print>
-		</jstl:forEach>
-	]
-	let minimumKitchenUtensilsData = [
-		<jstl:forEach items="${minimumRetailPriceOfKitchenUtensilsByCurrency}" var="minimumRetailPriceOfKitchenUtensilsByCurrency">
-			<acme:print value="${minimumRetailPriceOfKitchenUtensilsByCurrency['value'].toString()}"></acme:print>
-			<acme:print value=","></acme:print>
-		</jstl:forEach>
-	]
-	newChart(minimumKitchenUtensilsLabel, minimumKitchenUtensilsData, "minimumRetailPriceOfKitchenUtensilsByCurrency");
-			
-	let maximumKitchenUtensilsLabel = [
-		<jstl:forEach items="${maximumRetailPriceOfKitchenUtensilsByCurrency}" var="maximumRetailPriceOfKitchenUtensilsByCurrency">
-			<acme:print value="${maximumRetailPriceOfKitchenUtensilsByCurrency['key']}"></acme:print>
-			<acme:print value=","></acme:print>
-		</jstl:forEach>
-	]
-	let maximumKitchenUtensilsData = [
-		<jstl:forEach items="${maximumRetailPriceOfKitchenUtensilsByCurrency}" var="maximumRetailPriceOfKitchenUtensilsByCurrency">
-			<acme:print value="${maximumRetailPriceOfKitchenUtensilsByCurrency['value'].toString()}"></acme:print>
-			<acme:print value=","></acme:print>
-		</jstl:forEach>
-	]
-	newChart(maximumKitchenUtensilsLabel, maximumKitchenUtensilsData, "maximumRetailPriceOfKitchenUtensilsByCurrency");
+	var minimumKitchenUtensils = {
+			<jstl:forEach items="${minimumRetailPriceOfKitchenUtensilsByCurrency}" var="item" varStatus="loop">
+	 	      ${item.key}: '${item.value}' ${not loop.last ? ',' : ''}
+			</jstl:forEach>
+		};
+		newChart(Object.keys(minimumKitchenUtensils), Object.values(minimumKitchenUtensils), "minimumRetailPriceOfKitchenUtensilsByCurrency");
+				
+	var maximumKitchenUtensils = {
+			<jstl:forEach items="${maximumRetailPriceOfKitchenUtensilsByCurrency}" var="item" varStatus="loop">
+	 	      ${item.key}: '${item.value}' ${not loop.last ? ',' : ''}
+			</jstl:forEach>
+		};
+		newChart(Object.keys(maximumKitchenUtensils), Object.values(maximumKitchenUtensils), "maximumRetailPriceOfKitchenUtensilsByCurrency");
 	
+	var totalFineDishes = {
+			<jstl:forEach items="${totalNumberOfFineDishesByStatus}" var="item" varStatus="loop">
+	 	      ${item.key}: '${item.value}' ${not loop.last ? ',' : ''}
+			</jstl:forEach>
+		};
+		newChart(Object.keys(totalFineDishes), Object.values(totalFineDishes), "totalNumberOfFineDishesByStatus");
+
 	});
 </script>
 

@@ -2,6 +2,9 @@ package acme.forms;
 
 import java.util.Map;
 
+import org.springframework.data.util.Pair;
+
+import acme.entities.fineDishes.FineDishStatus;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -9,28 +12,15 @@ import lombok.Setter;
 @Setter
 public class EpicureDashboard {
 	
-		// Serialisation identifier ----------------------------------------------
+	// Serialisation identifier ----------------------------------------------
 	
-				protected static final long		serialVersionUID 		= 1L;
+		protected static final long		serialVersionUID 		= 1L;
 				
-				// Atributes -----------------------------------------------------
-				
-				int totalNumberOfProposedFineDishes;
-				int totalNumberOfAcceptedFineDishes;
-				int totalNumberofDeniedFineDishes;
-				
-				Map<String, Double> averageBudgetOfProposedFineDishesByCurrency;
-				Map<String, Double> deviationBudgetOfProposedFineDishesByCurrency;
-				Map<String, Double> minimumBudgetOfProposedFineDishesByCurrency;
-				Map<String, Double> maximumBudgetOfProposedFineDishesByCurrency;
-				
-				Map<String, Double> averageBudgetOfAcceptedFineDishesByCurrency;
-				Map<String, Double> deviationBudgetOfAcceptedFineDishesByCurrency;
-				Map<String, Double> minimumBudgetOfAcceptedFineDishesByCurrency;
-				Map<String, Double> maximumBudgetOfAceeptedFineDishesByCurrency;
-				
-				Map<String, Double> averageBudgetOfDeniedFineDishesByCurrency;
-				Map<String, Double> deviationBudgetOfDeniedFineDishesByCurrency;
-				Map<String, Double> minimumBudgetOfDeniedFineDishesByCurrency;
-				Map<String, Double> maximumBudgetOfDeniedFineDishesByCurrency;
+	// Atributes -----------------------------------------------------
+		
+		Map<FineDishStatus, Integer> totalNumberOfFineDishesByStatus;
+		Map<Pair<FineDishStatus,String>, Double> averageBudgetOfFineDishesByStatus;
+		Map<Pair<FineDishStatus,String>, Double> deviationBudgetOfFineDishesByStatus;
+		Map<Pair<FineDishStatus,String>, Double> minimumBudgetOfFineDishesByStatus;
+		Map<Pair<FineDishStatus,String>, Double> maximumBudgetOfFineDishesByStatus;
 }

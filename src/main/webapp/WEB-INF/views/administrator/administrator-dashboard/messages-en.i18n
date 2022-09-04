@@ -1,17 +1,52 @@
-# messages-en.i18n
-#
-# Copyright (C) 2012-2022 Rafael Corchuelo.
-#
-# In keeping with the traditional purpose of furthering education and research, it is
-# the policy of the copyright owner to permit non-commercial use and redistribution of
-# this software. It has been tested carefully, but it is not guaranteed for any particular
-# purposes.  The copyright owner does not offer any warranties or representations, nor do
-# they accept any liabilities with respect to them.
-
 administrator.dashboard.form.title.general-indicators = General indicators
-administrator.dashboard.form.title.application-statuses = Application statuses  
 
-administrator.dashboard.form.label.average-number-jobs-employer =  Average number of jobs per employer
-administrator.dashboard.form.label.average-number-applications-worker =  Average number of applications per worker
-administrator.dashboard.form.label.average-number-applications-employer = Average number of applications per employer
+administrator.dashboard.form.label.total-number-of-ingredients = Number of ingredients
+administrator.dashboard.form.label.average-retail-price-of-ingredients-by-currency = Average retail price of ingredients
+administrator.dashboard.form.label.deviation-retail-price-of-ingredients-by-currency = Deviation retail price of ingredients
+administrator.dashboard.form.label.minimum-retail-price-of-ingredients-by-currency = Minimum retail price of ingredients
+administrator.dashboard.form.label.maximum-retail-price-of-ingredients-by-currency = Maximum retail price of ingredients
+
+administrator.dashboard.form.label.total-number-of-kitchen-utensils = Number of kitchen utensils
+administrator.dashboard.form.label.average-retail-price-of-kitchen-utensils-by-currency = Average number of kitchen utensils
+administrator.dashboard.form.label.deviation-retail-price-of-kitchen-utensils-by-currency = Deviation retail price of kitchen utensils
+administrator.dashboard.form.label.minimum-retail-price-of-kitchen-utensils-by-currency = Minimum retail price of kitchen utensils
+administrator.dashboard.form.label.maximum-retail-price-of-kitchen-utensils-by-currency = Maximum retail price of kitchen utensils
+
+administrator.dashboard.form.label.total-number-of-fine-dishes-by-status = Number of fine dishes by status
+administrator.dashboard.form.status.average.ACCEPTED.EUR = Average budget of accepted fine dishes (EUR)
+administrator.dashboard.form.status.average.ACCEPTED.USD = Average budget of accepted fine dishes (USD)
+administrator.dashboard.form.status.average.ACCEPTED.GBP = Average budget of accepted fine dishes (GBP)
+administrator.dashboard.form.status.average.DENIED.EUR = Average budget of denied fine dishes (EUR)
+administrator.dashboard.form.status.average.DENIED.USD = Average budget of denied fine dishes (USD)
+administrator.dashboard.form.status.average.DENIED.GBP = Average budget of denied fine dishes (GBP)
+administrator.dashboard.form.status.average.PROPOSED.EUR = Average budget of proposed fine dishes (EUR)
+administrator.dashboard.form.status.average.PROPOSED.USD = Average budget of proposed fine dishes (USD)
+administrator.dashboard.form.status.average.PROPOSED.GBP = Average budget of proposed fine dishes (GBP)
+administrator.dashboard.form.status.deviation.ACCEPTED.EUR = Deviation budget of accepted fine dishes (EUR)
+administrator.dashboard.form.status.deviation.ACCEPTED.USD = Deviation budget of accepted fine dishes (USD)
+administrator.dashboard.form.status.deviation.ACCEPTED.GBP = Deviation budget of accepted fine dishes (GBP)
+administrator.dashboard.form.status.deviation.DENIED.EUR = Deviation budget of denied fine dishes (EUR)
+administrator.dashboard.form.status.deviation.DENIED.USD = Deviation budget of denied fine dishes (USD)
+administrator.dashboard.form.status.deviation.DENIED.GBP = Deviation budget of denied fine dishes (GBP)
+administrator.dashboard.form.status.deviation.PROPOSED.EUR = Deviation budget of proposed fine dishes (EUR)
+administrator.dashboard.form.status.deviation.PROPOSED.USD = Deviation budget of proposed fine dishes (USD)
+administrator.dashboard.form.status.deviation.PROPOSED.GBP = Deviation budget of proposed fine dishes (GBP)
+administrator.dashboard.form.status.minimum.ACCEPTED.EUR = Minimum budget of accepted fine dishes (EUR)
+administrator.dashboard.form.status.minimum.ACCEPTED.USD = Minimum budget of accepted fine dishes (USD)
+administrator.dashboard.form.status.minimum.ACCEPTED.GBP = Minimum budget of accepted fine dishes (GBP)
+administrator.dashboard.form.status.minimum.DENIED.EUR = Minimum budget of denied fine dishes (EUR)
+administrator.dashboard.form.status.minimum.DENIED.USD = Minimum budget of denied fine dishes (USD)
+administrator.dashboard.form.status.minimum.DENIED.GBP = Minimum budget of denied fine dishes (GBP)
+administrator.dashboard.form.status.minimum.PROPOSED.EUR = Minimum budget of proposed fine dishes (EUR)
+administrator.dashboard.form.status.minimum.PROPOSED.USD = Minimum budget of proposed fine dishes (USD)
+administrator.dashboard.form.status.minimum.PROPOSED.GBP = Minimum budget of proposed fine dishes (GBP)
+administrator.dashboard.form.status.maximum.ACCEPTED.EUR = Maximum budget of accepted fine dishes (EUR)
+administrator.dashboard.form.status.maximum.ACCEPTED.USD = Maximum budget of accepted fine dishes (USD)
+administrator.dashboard.form.status.maximum.ACCEPTED.GBP = Maximum budget of accepted fine dishes (GBP)
+administrator.dashboard.form.status.maximum.DENIED.EUR = Maximum budget of denied fine dishes (EUR)
+administrator.dashboard.form.status.maximum.DENIED.USD = Maximum budget of denied fine dishes (USD)
+administrator.dashboard.form.status.maximum.DENIED.GBP = Maximum budget of denied fine dishes (GBP)
+administrator.dashboard.form.status.maximum.PROPOSED.EUR = Maximum budget of proposed fine dishes (EUR)
+administrator.dashboard.form.status.maximum.PROPOSED.USD = Maximum budget of proposed fine dishes (USD)
+administrator.dashboard.form.status.maximum.PROPOSED.GBP = Maximum budget of proposed fine dishes (GBP)
 

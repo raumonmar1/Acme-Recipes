@@ -53,6 +53,7 @@
 		
 		<acme:menu-option code="master.menu.epicure" access="hasRole('Epicure')">
 			<acme:menu-suboption code="master.menu.epicure.fine-dish" action="/epicure/fine-dish/list"/>
+			<acme:menu-suboption code="master.menu.epicure.dashboard" action="/epicure/epicure-dashboard/show"/>
 		</acme:menu-option>
 		
 		<acme:menu-option code="master.menu.provider" access="hasRole('Provider')">
