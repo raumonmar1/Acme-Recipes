@@ -9,7 +9,7 @@ chef.element.list.label.chef = Chef
 
 chef.element.form.label.type = Tipo:
 chef.element.form.label.name = Nombre:
-chef.item.form.label.code = Código:
+chef.element.form.label.code = Código:
 chef.element.form.label.amount-unit = Unidad de cantidad:
 chef.element.form.label.description = Descripción:
 chef.element.form.label.retail-price = Precio al por menor:

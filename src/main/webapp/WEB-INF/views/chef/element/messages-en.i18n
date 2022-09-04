@@ -1,7 +1,7 @@
 chef.element.list.label.type = Type
 chef.element.list.label.name = Name
 chef.element.list.label.code = Code
-chef.element.list.label.amount-unit = Amount Unit
+chef.element.list.label.amount-unit = Amount unit
 chef.element.list.label.description = Description
 chef.element.list.label.retail-price = Retail price
 chef.element.list.label.link = Link
@@ -9,8 +9,8 @@ chef.element.list.label.chef = Chef
 
 chef.element.form.label.type = Type:
 chef.element.form.label.name = Name:
-chef.item.form.label.code = Code:
-chef.element.form.label.amount-unit = Amount Unit:
+chef.element.form.label.code = Code:
+chef.element.form.label.amount-unit = Amount unit:
 chef.element.form.label.description = Description:
 chef.element.form.label.retail-price = Retail price:
 chef.element.form.label.link = Link:

@@ -12,7 +12,7 @@ chef.fine-dish.list.label.code= Code
 chef.fine-dish.list.label.budget= Budget
 chef.fine-dish.list.label.startDate= Start date
 chef.fine-dish.list.label.finishDate= End date
-chef.fine-dish.list.label.info = Info
+chef.fine-dish.list.label.info = Info link
 chef.fine-dish.list.label.status = Status
 
 
@@ -20,9 +20,9 @@ chef.fine-dish.form.label.code = Code
 chef.fine-dish.form.label.startDate = Start date
 chef.fine-dish.form.label.finishDate = End date
 chef.fine-dish.form.label.budget = Budget
-chef.fine-dish.form.label.info = Info
-chef.fine-dish.form.label.assertion = Status
+chef.fine-dish.form.label.info = Info link
+chef.fine-dish.form.label.status = Status
 chef.fine-dish.form.label.username = Chef's username
 chef.fine-dish.form.label.organisation = Chef's organisation
-chef.fine-dish.form.label.chef-info = Chef's info
+chef.fine-dish.form.label.chef-info = Chef's info lin
 chef.fine-dish.form.label.assertion = Chef's assertion

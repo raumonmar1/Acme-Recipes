@@ -32,12 +32,12 @@ master.menu.administrator.shut-down = Shut down
 # master.menu.authenticated ###################################################
 
 master.menu.authenticated = Authenticated
-master.menu.authenticated.bulletin = List recent bulletins
+master.menu.authenticated.bulletin = List Recent Bulletins
 
 # master.menu.any #############################################################
 
 master.menu.any = Any
-master.menu.any.user-accounts = User accounts
+master.menu.any.user-accounts = User Accounts
 master.menu.any.peep = List Recent Peeps
 master.menu.any.element = List Elementos
 master.menu.any.recipe = List Recetas
