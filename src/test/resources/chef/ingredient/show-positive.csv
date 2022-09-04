@@ -1,0 +1,5 @@
+recordIndex,published,name,code,description,retail-price,link,type,amountUnit,key:chef
+0,true,Salt,IN:AAA-001,This is an ingredient,EUR 1.00,"",INGREDIENT,gr,chef-01
+1,false,Butter,IN:AAA-010,This is an ingredient,GBP 4.00,http://example.com,INGREDIENT,gr,chef-01
+2,true,Eggs,IN:AAA-004,This is an ingredient,USD 3.00,"",INGREDIENT,uds,chef-01
+3,false,Pasta,IN:AAA-007,This is an ingredient,USD 2.00,"",INGREDIENT,gr,chef-01
