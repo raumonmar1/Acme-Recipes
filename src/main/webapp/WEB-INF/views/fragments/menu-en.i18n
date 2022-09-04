@@ -55,6 +55,7 @@ master.menu.chef.recipe = List Recipes
 master.menu.epicure = Epicure
 master.menu.epicure.fine-dish = List Fine Dishes
 master.menu.epicure.memorandum = List Memorandums
+master.menu.epicure.dashboard = Epicure dashboard
 
 # master.menu.provider ########################################################
 

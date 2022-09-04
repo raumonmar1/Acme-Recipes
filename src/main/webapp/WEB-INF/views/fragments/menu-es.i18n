@@ -36,7 +36,7 @@ master.menu.authenticated.bulletin = Listar Boletines Recientes
 
 # master.menu.any #############################################################
 
-master.menu.administrator = Cualquiera
+master.menu.any = Cualquiera
 master.menu.any.user-accounts = Cuentas de Usuario
 master.menu.any.peep = Listar Peeps Recientes
 master.menu.any.element = Listar Elementos
@@ -55,6 +55,7 @@ master.menu.chef.recipe = Listar Recetas
 master.menu.epicure = Epicure
 master.menu.epicure.fine-dish = Listar platos recomendados
 master.menu.epicure.memorandum = Listar informes
+master.menu.epicure.dashboard = Panel de indicadores
 
 # master.menu.provider ########################################################
 
