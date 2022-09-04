@@ -12,16 +12,10 @@
 	</acme:input-select>
 	<acme:input-textbox code="chef.element.form.label.name" path="name" />
 	<acme:input-textbox code="chef.element.form.label.code" path="code" />
-	<acme:input-textbox code="chef.element.form.label.amount-unit"
-		path="amountUnit" />
-	<acme:input-textbox code="chef.element.form.label.description"
-		path="description" />
-	<acme:input-textbox code="chef.element.form.label.retail-price"
-		path="retailPrice" />
-	<acme:input-textbox code="chef.element.form.label.link"
-		path="link" />
-	<acme:input-textbox code="chef.element.form.label.chef"
-		path="chef.userAccount.username" />
-	<acme:input-textbox code="chef.element.form.label.published"
-		path="published" />
+	<acme:input-textbox code="chef.element.form.label.description" path="description" />
+	<acme:input-textbox code="chef.element.form.label.retail-price" path="retailPrice" />
+	<acme:input-textbox code="chef.element.form.label.amount-unit" path="amountUnit" />
+	<acme:input-textbox code="chef.element.form.label.link" path="link" />
+	<acme:input-textbox code="chef.element.form.label.chef" path="chef.userAccount.username" />
+	<acme:input-textbox code="chef.element.form.label.published" path="published" />
 </acme:form>
