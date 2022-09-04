@@ -10,6 +10,6 @@ any.recipe.form.label.heading = Titulo
 any.recipe.form.label.description = Descripción:
 any.recipe.form.label.preparation-notes = Notas de preparación:
 any.recipe.form.label.info = Link de información:
-any.recipe.form.label.retailPrice = Precio comercial:
+any.recipe.form.label.retail-price = Precio comercial:
 any.recipe.form.label.chef = Chef:
 any.recipe.form.button.elements = Elementos

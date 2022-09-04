@@ -17,14 +17,14 @@
 
 <acme:form>
 	<acme:input-textbox code="epicure.fine-dish.form.label.code" path="code"/>
-	<acme:input-moment code="epicure.fine-dish.form.label.startDate" path="startDate"/>
-	<acme:input-moment code="epicure.fine-dish.form.label.finishDate" path="finishDate"/>
+	<acme:input-moment code="epicure.fine-dish.form.label.start-date" path="startDate"/>
+	<acme:input-moment code="epicure.fine-dish.form.label.finish-date" path="finishDate"/>
 	<acme:input-textbox code="epicure.fine-dish.form.label.info" path="info"/>
 	<acme:input-textbox code="epicure.fine-dish.form.label.status" path="status"/>
 	<acme:input-textbox code="epicure.fine-dish.form.label.budget" path="budget"/>
 	<acme:input-textbox code="epicure.fine-dish.form.label.username" path="chef.userAccount.username"/>
 	<acme:input-textbox code="epicure.fine-dish.form.label.organisation" path="chef.organisation"/>
-	<acme:input-textbox code="epicure.fine-dish.form.label.chef-link" path="chef.info"/>
+	<acme:input-textbox code="epicure.fine-dish.form.label.chef-info" path="chef.info"/>
 	<acme:input-textbox code="epicure.fine-dish.form.label.assertion" path="chef.assertion"/>
 
 </acme:form>

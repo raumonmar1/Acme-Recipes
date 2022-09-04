@@ -10,18 +10,18 @@
 
 epicure.fine-dish.list.label.code= Code
 epicure.fine-dish.list.label.budget= Budget
-epicure.fine-dish.list.label.startDate= Start date
-epicure.fine-dish.list.label.finishDate= End date
+epicure.fine-dish.list.label.start-date= Start date
+epicure.fine-dish.list.label.finish-date= End date
 epicure.fine-dish.list.label.info = Info
 epicure.fine-dish.list.label.status = Status
 
 
 epicure.fine-dish.form.label.code = Code
-epicure.fine-dish.form.label.startDate = Start date
-epicure.fine-dish.form.label.finishDate = End date
+epicure.fine-dish.form.label.start-date = Start date
+epicure.fine-dish.form.label.finish-date = End date
 epicure.fine-dish.form.label.budget = Budget
 epicure.fine-dish.form.label.info = Info
-epicure.fine-dish.form.label.assertion = Status
+epicure.fine-dish.form.label.status = Status
 epicure.fine-dish.form.label.username = Chef's username
 epicure.fine-dish.form.label.organisation = Chef's organisation
 epicure.fine-dish.form.label.chef-info = Chef's info

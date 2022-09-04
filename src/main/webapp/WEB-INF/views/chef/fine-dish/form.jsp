@@ -24,7 +24,7 @@
 	<acme:input-textbox code="chef.fine-dish.form.label.budget" path="budget"/>
 	<acme:input-textbox code="chef.fine-dish.form.label.username" path="chef.userAccount.username"/>
 	<acme:input-textbox code="chef.fine-dish.form.label.organisation" path="chef.organisation"/>
-	<acme:input-textbox code="chef.fine-dish.form.label.chef-link" path="chef.info"/>
+	<acme:input-textbox code="chef.fine-dish.form.label.chef-info" path="chef.info"/>
 	<acme:input-textbox code="chef.fine-dish.form.label.assertion" path="chef.assertion"/>
 
 </acme:form>

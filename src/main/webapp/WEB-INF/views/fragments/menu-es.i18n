@@ -24,7 +24,7 @@ master.menu.anonymous.favourite-link-raul = 47428674Y: Montalbán Martín, Raúl
 # master.menu.administrator ###################################################
 
 master.menu.administrator = Administrador
-master.menu.administrator.dashboard = Panel de indicadores
+master.menu.administrator.dashboard = Panel de Indicadores
 master.menu.administrator.populate-initial = Poblar BD (inicial)
 master.menu.administrator.populate-sample = Poblar BD (ejemplos)
 master.menu.administrator.shut-down = Parar el sistema
@@ -32,28 +32,29 @@ master.menu.administrator.shut-down = Parar el sistema
 # master.menu.authenticated ###################################################
 
 master.menu.authenticated = Autenticado
-master.menu.authenticated.bulletin = Listar boletines recientes
+master.menu.authenticated.bulletin = Listar Boletines Recientes
 
 # master.menu.any #############################################################
 
-master.menu.administrator = Cualquiera
-master.menu.any.user-accounts = Cuentas de usuario
-master.menu.any.peep = Listar peeps recientes
+master.menu.any = Cualquiera
+master.menu.any.user-accounts = Cuentas de Usuario
+master.menu.any.peep = Listar Peeps Recientes
 master.menu.any.element = Listar Elementos
 master.menu.any.recipe = Listar Recipes
 
 # master.menu.chef ##########################################################
 
 master.menu.chef = Chef
-master.menu.chef.fine-dish = Listar platos recomendados
-master.menu.chef.memorandum = Listar informes
-master.menu.chef.element = Listar elementos
+master.menu.chef.fine-dish = Listar Platos Recomendados
+master.menu.chef.memorandum = Listar Informes
+master.menu.chef.element = Listar Elementos
 master.menu.chef.recipe = Listar Recetas
 
 # master.menu.epicure ##########################################################
 
 master.menu.epicure = Epicure
 master.menu.epicure.fine-dish = Listar platos recomendados
+master.menu.epicure.memorandum = Listar informes
 master.menu.epicure.dashboard = Panel de indicadores
 
 # master.menu.provider ########################################################
