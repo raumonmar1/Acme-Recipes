@@ -39,8 +39,8 @@ master.menu.authenticated.bulletin = List Recent Bulletins
 master.menu.any = Any
 master.menu.any.user-accounts = User Accounts
 master.menu.any.peep = List Recent Peeps
-master.menu.any.element = List Elementos
-master.menu.any.recipe = List Recetas
+master.menu.any.element = List Elements
+master.menu.any.recipe = List Recipes
 
 # master.menu.chef ##########################################################
 
