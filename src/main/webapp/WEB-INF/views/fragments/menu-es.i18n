@@ -54,6 +54,7 @@ master.menu.chef.recipe = Listar Recetas
 
 master.menu.epicure = Epicure
 master.menu.epicure.fine-dish = Listar platos recomendados
+master.menu.epicure.memorandum = Listar informes
 
 # master.menu.provider ########################################################
 
