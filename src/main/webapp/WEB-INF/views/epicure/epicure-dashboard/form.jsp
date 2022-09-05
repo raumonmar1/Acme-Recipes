@@ -7,7 +7,7 @@
 	<acme:message code="epicure.dashboard.form.title.general-indicators"/>
 </h2>
 
-<table class="table table-sm">
+<table class="table table-sm" aria-describedby="dashboard">
 	<tr>
 		<th scope="row">
 			<acme:message code="epicure.dashboard.form.label.total-number-of-fine-dishes-by-status"/>

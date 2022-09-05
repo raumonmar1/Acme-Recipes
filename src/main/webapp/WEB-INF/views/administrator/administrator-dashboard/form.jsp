@@ -7,7 +7,7 @@
 	<acme:message code="administrator.dashboard.form.title.general-indicators"/>
 </h2>
 
-<table class="table table-sm">
+<table class="table table-sm" aria-describedby="Dashboard">
 	<tr>
 		<th scope="row">
 			<acme:message code="administrator.dashboard.form.label.total-number-of-ingredients"/>
