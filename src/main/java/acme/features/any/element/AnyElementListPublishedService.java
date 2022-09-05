@@ -43,7 +43,7 @@ public class AnyElementListPublishedService implements AbstractListService<Any, 
 				assert entity != null;
 				assert model != null;
 
-				request.unbind(entity, model, "type", "name", "code","retailPrice", "amountUnit");
+				request.unbind(entity, model, "type", "name", "code");
 				
 			}
 }

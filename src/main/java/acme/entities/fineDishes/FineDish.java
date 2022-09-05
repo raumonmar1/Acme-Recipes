@@ -71,5 +71,5 @@ public class FineDish extends AbstractEntity {
 	@Valid
 	@ManyToOne(optional=false)
 	protected Epicure epicure;
-	
+
 }

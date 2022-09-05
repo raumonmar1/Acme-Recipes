@@ -44,9 +44,7 @@ public class ChefElementListMineService implements AbstractListService<Chef, Ele
 		assert entity != null; 
 		assert model != null; 
 		
-		
- 
-		request.unbind(entity, model, "type", "name", "code", "retailPrice", "amountUnit"); 
+		request.unbind(entity, model, "type", "name", "code"); 
 		 
 		 
 	} 

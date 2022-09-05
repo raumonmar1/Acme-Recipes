@@ -9,6 +9,7 @@ import org.springframework.stereotype.Repository;
 import acme.entities.elements.Element;
 import acme.entities.quantities.Quantity;
 import acme.entities.recipes.Recipe;
+import acme.forms.MoneyExchange;
 import acme.framework.repositories.AbstractRepository;
 import acme.roles.Chef;
 
@@ -28,10 +29,12 @@ public interface ChefRecipeRepository extends AbstractRepository{
 	Collection<Quantity> findQuantityByRecipeId(@Param("id")int id);
 	
 	@Query("Select q.element from Quantity q where q.id = :id")
-	 Collection<Element> findManyElementByQuantityId(@Param("id")int id);
+	Collection<Element> findManyElementByQuantityId(@Param("id")int id);
 	
 	@Query("select sc.systemCurrency from SystemConfiguration sc")
 	String findSystemCurrency();
-
- 
+	
+	@Query("select m from MoneyExchange m where m.source.currency = :currency and m.source.amount = :amount and m.target.currency = :systemCurrency")
+	MoneyExchange findMoneyExchange(@Param("currency")String currency, @Param("amount")Double amount,
+		@Param("systemCurrency")String systemCurrency);
 }

@@ -46,9 +46,7 @@ public class ChefRecipeListMineService implements AbstractListService<Chef, Reci
 		assert entity != null;
 		assert model != null;
 
-		request.unbind(entity, model, "code", 
-			"preparationNotes","heading","link", 
-			"chef.userAccount.username");
+		request.unbind(entity, model, "code", "heading", "link", "chef.userAccount.username");
 		
 		
 	}

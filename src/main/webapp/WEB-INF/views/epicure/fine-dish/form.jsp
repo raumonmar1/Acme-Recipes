@@ -22,6 +22,9 @@
 	<acme:input-textbox code="epicure.fine-dish.form.label.info" path="info"/>
 	<acme:input-textbox code="epicure.fine-dish.form.label.status" path="status"/>
 	<acme:input-textbox code="epicure.fine-dish.form.label.budget" path="budget"/>
+	<jstl:if test="${dif == true}">
+		<acme:input-money code="epicure.fine-dish.form.label.convertir" path="convertir" readonly="true"/>
+	</jstl:if>
 	<acme:input-textbox code="epicure.fine-dish.form.label.username" path="chef.userAccount.username"/>
 	<acme:input-textbox code="epicure.fine-dish.form.label.organisation" path="chef.organisation"/>
 	<acme:input-textbox code="epicure.fine-dish.form.label.chef-info" path="chef.info"/>

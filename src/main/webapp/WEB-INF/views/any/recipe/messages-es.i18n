@@ -1,8 +1,6 @@
 any.recipe.list.label.code = Código
-any.recipe.list.label.heading = título
-any.recipe.list.label.description = Descripción
-any.recipe.list.label.preparation-notes = Notas de preparación
-any.recipe.list.label.info = link de información
+any.recipe.list.label.heading = Título
+any.recipe.list.label.link = Link de información
 
 
 any.recipe.form.label.code = Código:
@@ -11,5 +9,6 @@ any.recipe.form.label.description = Descripción:
 any.recipe.form.label.preparation-notes = Notas de preparación:
 any.recipe.form.label.info = Link de información:
 any.recipe.form.label.retail-price = Precio comercial:
+any.recipe.form.label.convertir = Precio convertido:
 any.recipe.form.label.chef = Chef:
 any.recipe.form.button.elements = Elementos

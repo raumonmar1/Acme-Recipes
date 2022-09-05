@@ -5,9 +5,8 @@
  
 <acme:list> 
 	<acme:list-column code="chef.fine-dish.list.label.code" path="code"/> 
-	<acme:list-column code="chef.fine-dish.list.label.budget" path="budget"/>
 	<acme:list-column code="chef.fine-dish.list.label.startDate" path="startDate"/>	 
 	<acme:list-column code="chef.fine-dish.list.label.finishDate" path="finishDate"/>
 	<acme:list-column code="chef.fine-dish.list.label.status" path="status"/>
-	 
+	<acme:list-column code="chef.fine-dish.list.label.info" path="info"/>
 </acme:list>                                                                                             

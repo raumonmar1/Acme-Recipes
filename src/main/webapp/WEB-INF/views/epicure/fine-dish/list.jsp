@@ -5,9 +5,8 @@
  
 <acme:list> 
 	<acme:list-column code="epicure.fine-dish.list.label.code" path="code"/> 
-	<acme:list-column code="epicure.fine-dish.list.label.budget" path="budget"/>
-	<acme:list-column code="epicure.fine-dish.list.label.startDate" path="startDate"/>	 
-	<acme:list-column code="epicure.fine-dish.list.label.finishDate" path="finishDate"/>
+	<acme:list-column code="epicure.fine-dish.list.label.start-date" path="startDate"/>	 
+	<acme:list-column code="epicure.fine-dish.list.label.finish-date" path="finishDate"/>
 	<acme:list-column code="epicure.fine-dish.list.label.status" path="status"/>
-	 
+	<acme:list-column code="epicure.fine-dish.list.label.info" path="info"/>
 </acme:list>                                                                                             

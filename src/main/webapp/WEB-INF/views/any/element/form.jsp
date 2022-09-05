@@ -14,6 +14,9 @@
 	<acme:input-textbox code="any.element.form.label.amount-unit" path="amountUnit"/>
 	<acme:input-textarea code="any.element.form.label.description" path="description"/>	
 	<acme:input-money code="any.element.form.label.retail-price" path="retailPrice"/>
+	<jstl:if test="${dif == true}">
+		<acme:input-money code="any.element.form.label.convertir" path="convertir" readonly="true"/>
+	</jstl:if>
 	<acme:input-url code="any.element.form.label.info" path="info"/>	
 	<acme:input-textbox code="any.element.form.label.chef" path="chef.userAccount.username"/>
 	<acme:input-textbox code="any.element.form.label.published" path="published"/>

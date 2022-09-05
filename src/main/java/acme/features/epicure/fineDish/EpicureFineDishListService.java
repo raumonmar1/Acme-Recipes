@@ -19,6 +19,7 @@ public class EpicureFineDishListService implements AbstractListService<Epicure, 
 	@Override 
 	public boolean authorise(final Request<FineDish> request) { 
 		assert request != null; 
+		
 		return true; 
 	} 
  
@@ -29,7 +30,7 @@ public class EpicureFineDishListService implements AbstractListService<Epicure, 
 		final Collection<FineDish> result; 
 		final int UAId = request.getPrincipal().getAccountId();
 		final int epicureId = this.repository.findEpicureByUserAccountId(UAId).getId();
-		result=this.repository.findFineDishesByEpicureId(epicureId); 
+		result = this.repository.findFineDishesByEpicureId(epicureId); 
 		
 		return result;
 	} 
@@ -39,7 +40,8 @@ public class EpicureFineDishListService implements AbstractListService<Epicure, 
 		assert request != null; 
 		assert entity != null; 
 		assert model != null; 
-		request.unbind(entity, model, "code","budget","request", "info", "startDate","finishDate","status");		 
+		
+		request.unbind(entity, model, "code", "info", "startDate","finishDate", "status");		 
 	} 
  
 } 

@@ -1,8 +1,6 @@
 any.element.list.label.type = Tipo
 any.element.list.label.name = Nombre
 any.element.list.label.code = Código
-any.element.list.label.amount-unit = Cantidad unidad
-any.element.list.label.retail-price = Precio de venta
 
 any.element.form.label.type = Tipo:
 any.element.form.label.name = Nombre:
@@ -10,6 +8,7 @@ any.element.form.label.code = Código:
 any.element.form.label.amount-unit = Cantidad unidad:
 any.element.form.label.description = Descripción:
 any.element.form.label.retail-price = Precio de venta:
+any.element.form.label.convertir = Precio de venta convertido:
 any.element.form.label.info = Info:
 any.element.form.label.chef = Chef:
 any.element.form.label.published = Publicado:

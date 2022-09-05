@@ -7,6 +7,7 @@ import org.springframework.data.repository.query.Param;
 import org.springframework.stereotype.Repository;
 
 import acme.entities.fineDishes.FineDish;
+import acme.forms.MoneyExchange;
 import acme.framework.repositories.AbstractRepository;
 import acme.roles.Chef;
 
@@ -14,10 +15,18 @@ import acme.roles.Chef;
 public interface ChefFineDishRepository extends AbstractRepository {
 
 	@Query("Select f from FineDish f where f.chef.id = :id") 
-	Collection<FineDish> findFineDishByChefId(@Param("id")int id); 
+	Collection<FineDish> findFineDishByChefId(@Param("id")int id);
+	
 	@Query("Select c from Chef c where c.userAccount.id = :id")
 	Chef findChefByUserAccountId(@Param("id")int id); 
+	
 	@Query("Select f from FineDish f where f.id = :id") 
 	FineDish findFineDishById(@Param("id")int id); 
 	
+	@Query("select sc.systemCurrency from SystemConfiguration sc")
+	String findSystemCurrency();
+
+	@Query("select m from MoneyExchange m where m.source.currency = :currency and m.source.amount = :amount and m.target.currency = :systemCurrency")
+	MoneyExchange findMoneyExchange(@Param("currency")String currency, @Param("amount")Double amount,
+		@Param("systemCurrency")String systemCurrency);
 }

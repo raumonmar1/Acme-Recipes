@@ -66,7 +66,7 @@ public class ChefRecipeElementListService implements AbstractListService<Chef, E
 		
 		
  
-		request.unbind(entity, model, "type", "name","code", "amountUnit", "retailPrice"); 
+		request.unbind(entity, model, "type", "name", "code"); 
 		 
 	}
 

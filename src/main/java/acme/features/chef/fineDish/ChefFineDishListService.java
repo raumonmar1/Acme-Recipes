@@ -12,7 +12,8 @@ import acme.framework.services.AbstractListService;
 import acme.roles.Chef;
 
 @Service
-public class ChefFineDishListService implements AbstractListService<Chef, FineDish>{
+public class ChefFineDishListService implements AbstractListService<Chef, FineDish> {
+	
 	@Autowired 
 	protected ChefFineDishRepository repository; 
  
@@ -39,7 +40,7 @@ public class ChefFineDishListService implements AbstractListService<Chef, FineDi
 		assert request != null; 
 		assert entity != null; 
 		assert model != null; 
-		request.unbind(entity, model, "status","code", "request", "budget", "startDate","finishDate","info");		 
+		request.unbind(entity, model, "status","code", "startDate", "finishDate", "info");		 
 	}
 
 }

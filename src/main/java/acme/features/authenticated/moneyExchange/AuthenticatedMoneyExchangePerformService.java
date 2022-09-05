@@ -33,7 +33,7 @@ public class AuthenticatedMoneyExchangePerformService implements AbstractPerform
 		assert entity != null;
 		assert errors != null;
 
-		request.bind(entity, errors, "source", "targetCurrency", "date", "target");
+		request.bind(entity, errors, "source", "currency", "date", "target");
 	}
 
 	@Override
@@ -42,7 +42,7 @@ public class AuthenticatedMoneyExchangePerformService implements AbstractPerform
 		assert entity != null;
 		assert model != null;
 
-		request.unbind(entity, model, "source", "targetCurrency", "date", "target");
+		request.unbind(entity, model, "source", "currency", "date", "target");
 	}
 
 	@Override
@@ -74,7 +74,7 @@ public class AuthenticatedMoneyExchangePerformService implements AbstractPerform
 		MoneyExchange exchange;
 
 		source = request.getModel().getAttribute("source", Money.class);
-		targetCurrency = request.getModel().getAttribute("targetCurrency", String.class);
+		targetCurrency = request.getModel().getAttribute("currency", String.class);
 		exchange = this.computeMoneyExchange(source, targetCurrency);
 		errors.state(request, exchange != null, "*", "authenticated.money-exchange.form.label.api-error");
 		if (exchange == null) {
@@ -119,12 +119,12 @@ public class AuthenticatedMoneyExchangePerformService implements AbstractPerform
 			targetAmount = rate * sourceAmount;
 
 			target = new Money();
-			target.setAmount(targetAmount);
+			target.setAmount(Math.round(targetAmount*100.0)/100.0);
 			target.setCurrency(targetCurrency);
 
 			result = new MoneyExchange();
 			result.setSource(source);
-			result.setTargetCurrency(targetCurrency);
+			result.setCurrency(targetCurrency);
 			result.setDate(record.getDate());
 			result.setTarget(target);
 		} catch (final Throwable oops) {

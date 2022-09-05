@@ -38,7 +38,7 @@ public class AnyRecipeElementListService implements AbstractListService<Any, Ele
 		
 		for(final Quantity quantity: quantities) {
 			final int id=quantity.getId();
-			final Collection<Element> elements=this.repository.findManyElementByQuantityId(id);
+			final Collection<Element> elements = this.repository.findManyElementByQuantityId(id);
 			result.addAll(elements);
 		}
 		
@@ -53,7 +53,7 @@ public class AnyRecipeElementListService implements AbstractListService<Any, Ele
 		
 		
  
-		request.unbind(entity, model, "type", "name","code", "amountUnit", "retailPrice"); 
+		request.unbind(entity, model, "type", "name", "code"); 
 		 
 	}
 

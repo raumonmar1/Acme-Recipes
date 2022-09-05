@@ -43,9 +43,7 @@ public class AnyRecipeListPublishedService implements AbstractListService<Any, R
 		assert entity != null;
 		assert model != null;
 	
-		request.unbind(entity, model, "code","heading", 
-			"description","preparationNotes", "link", 
-			"published");		
+		request.unbind(entity, model, "code", "heading", "link");		
 		
 	}
 

@@ -4,6 +4,8 @@
 <%@taglib prefix="acme" uri="urn:jsptagdir:/WEB-INF/tags"%>
 
 <acme:list>
-	<acme:list-column code="any.recipe.list.label.code" path="code" width="50%"/>
-	<acme:list-column code="any.recipe.list.label.heading" path="heading" width="50%"/>
+	<acme:list-column code="any.recipe.list.label.code" path="code"/>
+	<acme:list-column code="any.recipe.list.label.heading" path="heading"/>
+	<acme:list-column code="any.recipe.list.label.link" path="link"/>
+	<acme:list-column code="any.recipe.list.label.chef" path="chef.userAccount.username"/>
 </acme:list>
