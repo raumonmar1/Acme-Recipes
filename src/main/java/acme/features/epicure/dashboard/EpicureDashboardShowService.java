@@ -1,11 +1,10 @@
 package acme.features.epicure.dashboard;
 
 import java.util.Arrays;
+import java.util.EnumMap;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-
-import javax.persistence.Tuple;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.util.Pair;
@@ -37,7 +36,7 @@ public class EpicureDashboardShowService implements AbstractShowService<Epicure,
 
 		final EpicureDashboard result;
 		
-		final Map<FineDishStatus, Integer> totalNumberOfFineDishesByStatus = new HashMap<>();
+		final EnumMap<FineDishStatus, Integer> totalNumberOfFineDishesByStatus = new EnumMap<>(FineDishStatus.class);
 		final Map<Pair<FineDishStatus,String>, Double> averageBudgetOfFineDishesByStatus = new HashMap<>();
 		final Map<Pair<FineDishStatus,String>, Double> deviationBudgetOfFineDishesByStatus = new HashMap<>();
 		final Map<Pair<FineDishStatus,String>, Double> minimumBudgetOfFineDishesByStatus = new HashMap<>();
@@ -48,7 +47,7 @@ public class EpicureDashboardShowService implements AbstractShowService<Epicure,
 		final List<String> currencies = Arrays.asList(split);
 		
 		
-		for(final Tuple e: this.repository.totalNumberOfFineDishesByStatus()) {
+		for(int i = 0; i < this.repository.totalNumberOfFineDishesByStatus().size(); i++) {
 			this.repository.totalNumberOfFineDishesByStatus().stream()
 			.forEach(x -> totalNumberOfFineDishesByStatus.put((FineDishStatus) x.get(0), Integer.parseInt(x.get(1).toString())));
 		}
