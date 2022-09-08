@@ -21,4 +21,22 @@
 	<acme:input-textbox code="chef.element.form.label.link" path="link" />
 	<acme:input-textbox code="chef.element.form.label.chef" path="chef.userAccount.username" />
 	<acme:input-textbox code="chef.element.form.label.published" path="published" />
+
+	<jstl:choose>
+		<jstl:when
+			test="${acme:anyOf(command, 'show, update, delete, publish') && published == false}">
+			<acme:input-textbox code="chef.element.form.label.chef"
+				path="chef.userAccount.username" readonly="true" />
+			<acme:submit code="chef.element.form.button.delete"
+				action="/chef/element/delete" />
+			<acme:submit code="chef.element.form.button.update"
+				action="/chef/element/update" />
+			<acme:submit code="chef.element.form.button.publish"
+				action="/chef/element/publish" />
+		</jstl:when>
+		<jstl:when test="${command == 'create'}">
+			<acme:submit code="chef.element.form.button.create"
+				action="/chef/element/create" />
+		</jstl:when>
+	</jstl:choose>
 </acme:form>

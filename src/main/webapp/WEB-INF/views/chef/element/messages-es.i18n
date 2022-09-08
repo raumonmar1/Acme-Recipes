@@ -17,3 +17,14 @@ chef.element.form.label.convertir = Precio convertido:
 chef.element.form.label.link = Enlace:
 chef.element.form.label.chef = Chef:
 chef.element.form.label.published = Publicado:
+
+chef.element.form.button.create = Crear
+chef.element.list.button.create = Crear nuevo elemento
+chef.element.form.button.delete = Borrar
+chef.element.form.button.update = Actualizar
+chef.element.form.button.publish = Publicar
+
+chef.element.form.error.duplicated = Este código ya existe
+chef.element.form.error.retail-price-kitchen-utensil-zero-or-positive = El precio al por menor de un elemento de cocina a de ser 0 o positivo.
+chef.element.form.error.retail-price-ingredient-positive = El precio al por menor del ingrediente ha de ser positivo.
+chef.element.form.error.retail-price-currency-not-accepted = La conversión no ha sido aceptada.
