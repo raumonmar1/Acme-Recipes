@@ -12,3 +12,17 @@ chef.recipe.form.label.retail-price = Retail Price
 chef.recipe.form.label.convertir = Converted retail price
 chef.recipe.form.button.elements = Elements
 chef.recipe.form.label.published = Published
+
+chef.recipe.form.button.delete = Delete
+chef.recipe.form.button.create= Create
+chef.recipe.form.button.update = Update
+chef.recipe.form.button.publish = Publish
+
+chef.recipe.list.button.create = Create
+
+chef.recipe.form.error.duplicated = This code already exists
+chef.recipe.form.error.no-items = No elements assigned
+chef.recipe.form.error.no-items-published = Missing elements to be published
+chef.recipe.form.error.no-ingredient = No ingredients components assigned
+chef.recipe.form.error.no-kitchen-utensil = No kitchen utensils assigned
+chef.recipe.form.error.only-one-kitchen-utensil = There is more than one kitchen utensil assigned, only one is required

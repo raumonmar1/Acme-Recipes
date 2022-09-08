@@ -9,3 +9,5 @@
 	<acme:list-column code="any.recipe.list.label.link" path="link"/>
 	<acme:list-column code="any.recipe.list.label.chef" path="chef.userAccount.username"/>
 </acme:list>
+
+<acme:button code="chef.recipe.list.button.create" action="/chef/recipe/create"/>

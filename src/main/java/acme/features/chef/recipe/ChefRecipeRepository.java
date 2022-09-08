@@ -37,4 +37,13 @@ public interface ChefRecipeRepository extends AbstractRepository{
 	@Query("select m from MoneyExchange m where m.source.currency = :currency and m.source.amount = :amount and m.target.currency = :systemCurrency")
 	MoneyExchange findMoneyExchange(@Param("currency")String currency, @Param("amount")Double amount,
 		@Param("systemCurrency")String systemCurrency);
+	
+	@Query("select count (q.element) from Quantity q where q.element.type = acme.entities.elements.ElementType.INGREDIENT and q.recipe.id = :recipeId")
+	Integer findNumIngredientsOfRecipe(@Param("recipeId")int recipeId);
+	
+	@Query("select q from Quantity q where q.id = :id")
+	Quantity findOneQuantityById(@Param("id")int id);
+	
+	@Query("select r from Recipe r where r.code = :code")
+	Recipe findOneRecipeByCode(@Param("code")String code);
 }
