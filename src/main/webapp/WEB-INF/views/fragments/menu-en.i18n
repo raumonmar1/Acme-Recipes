@@ -43,6 +43,7 @@ master.menu.any.user-accounts = User Accounts
 master.menu.any.peep = List Recent Peeps
 master.menu.any.element = List Elements
 master.menu.any.recipe = List Recipes
+master.menu.any.create-peep = Create Peeps
 
 # master.menu.chef ##########################################################
 

@@ -43,6 +43,7 @@ master.menu.any.user-accounts = Cuentas de Usuario
 master.menu.any.peep = Listar Peeps Recientes
 master.menu.any.element = Listar Elementos
 master.menu.any.recipe = Listar Recipes
+master.menu.any.create-peep = Crear pitidos
 
 # master.menu.chef ##########################################################
 

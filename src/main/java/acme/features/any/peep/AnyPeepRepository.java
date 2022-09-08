@@ -17,4 +17,6 @@ public interface AnyPeepRepository extends AbstractRepository{
 	@Query("Select p from Peep p where p.moment > :fechaLimite") 
 	Collection<Peep> findRecentPeeps(@Param("fechaLimite")Date fechaLimite); 
 
+	@Query("Select p from Peep p where p.id = :id") 
+	Peep findChirpById(@Param("id")int id);
 } 
