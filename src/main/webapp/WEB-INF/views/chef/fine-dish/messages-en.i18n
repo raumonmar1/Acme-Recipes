@@ -16,3 +16,6 @@ chef.fine-dish.form.label.username = Chef's username
 chef.fine-dish.form.label.organisation = Chef's organisation
 chef.fine-dish.form.label.chef-info = Chef's info lin
 chef.fine-dish.form.label.assertion = Chef's assertion
+
+master.menu.epicure.create-fine-dish.memorandum = Create Report
+chef.fine-dish.form.button.update = Update status

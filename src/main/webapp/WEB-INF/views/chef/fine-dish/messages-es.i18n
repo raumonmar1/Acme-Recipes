@@ -16,3 +16,7 @@ chef.fine-dish.form.label.username = Nombre del usuario del chef
 chef.fine-dish.form.label.organisation = Nombre de la organización del chef
 chef.fine-dish.form.label.chef-info = Enlace del chef
 chef.fine-dish.form.label.assertion = Afirmación del chef
+
+master.menu.epicure.create-fine-dish.memorandum = Crear informe
+chef.fine-dish.form.button.update = Actualizar estado
+

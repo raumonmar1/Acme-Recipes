@@ -14,16 +14,22 @@ public class ChefFineDishController extends AbstractController<Chef, FineDish>{
 	//Internal State 
 	 
 		@Autowired 
-		protected ChefFineDishListService listRecentService; 
+		protected ChefFineDishListService listPublishedAcceptedAndDeniedService; 
 		@Autowired 
-		protected ChefFineDishShowService showService; 
+		protected ChefFineDishShowService showService;
+		@Autowired 
+		protected ChefFineDishListProposedService listPublishedProposedService; 
+		@Autowired 
+		protected ChefFineDishUpdateService updateService; 
 		 
 		 
 		//Constructors 
 		@PostConstruct 
 		protected void initialise() { 
 			super.addCommand("show", this.showService); 
-			super.addCommand("list", this.listRecentService); 
+			super.addCommand("list", this.listPublishedAcceptedAndDeniedService); 
+			super.addCommand("list-proposed","list", this.listPublishedProposedService); 
+			super.addCommand("update", this.updateService);
 		} 
 	 
 	} 
