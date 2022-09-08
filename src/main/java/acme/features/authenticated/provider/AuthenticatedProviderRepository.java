@@ -13,6 +13,7 @@
 package acme.features.authenticated.provider;
 
 import org.springframework.data.jpa.repository.Query;
+import org.springframework.data.repository.query.Param;
 import org.springframework.stereotype.Repository;
 
 import acme.framework.entities.UserAccount;
@@ -23,9 +24,9 @@ import acme.roles.Provider;
 public interface AuthenticatedProviderRepository extends AbstractRepository {
 
 	@Query("select p from Provider p where p.userAccount.id = :id")
-	Provider findOneProviderByUserAccountId(int id);
+	Provider findOneProviderByUserAccountId(@Param("id")int id);
 
 	@Query("select ua from UserAccount ua where ua.id = :id")
-	UserAccount findOneUserAccountById(int id);
+	UserAccount findOneUserAccountById(@Param("id")int id);
 
 }
