@@ -15,13 +15,18 @@ public class AnyPeepController extends AbstractController<Any, Peep> {
 	// Internal state ---------------------------------------------------------
 	 
 		@Autowired 
-		protected AnyPeepListRecentService listRecentService; 
+		protected AnyPeepListRecentService listRecentService;
+		
+		@Autowired 
+		protected AnyPeepCreateService createService; 
 
 	// Constructors -----------------------------------------------------------
 		
 		@PostConstruct 
 		protected void initialise() { 
-			super.addCommand("list", this.listRecentService); 
+			super.addCommand("list", this.listRecentService);
+			super.addCommand("create", this.createService); 
+			
 		} 
 
 } 

@@ -43,6 +43,8 @@
 			<acme:menu-suboption code="master.menu.any.peep" action="/any/peep/list"/>
 			<acme:menu-suboption code="master.menu.any.element" action="/any/element/list"/>
 			<acme:menu-suboption code="master.menu.any.recipe" action="/any/recipe/list"/>
+			<acme:menu-suboption code="master.menu.any.create-peep" action="/any/peep/create"/>
+			
 		</acme:menu-option>
 		
 		<acme:menu-option code="master.menu.chef" access="hasRole('Chef')">

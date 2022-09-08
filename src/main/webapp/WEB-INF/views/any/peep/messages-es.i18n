@@ -3,3 +3,12 @@ any.peep.list.label.writer = Autor
 any.peep.list.label.moment = Momento
 any.peep.list.label.piece-of-text = Pieza de texto
 any.peep.list.label.email = Correo electrónico
+	
+any.peep.form.label.heading = Título
+any.peep.form.label.writer = Autor
+any.peep.form.label.pieceOfText = Pieza de texto
+any.peep.form.label.email = Email
+any.peep.form.label.confirmation = Confirmar que el pitido está correcto
+any.peep.form.button.create = Crear
+any.peep.list.button.create = Crear
+any.peep.confirmation.error = Por favor, marque la casilla
