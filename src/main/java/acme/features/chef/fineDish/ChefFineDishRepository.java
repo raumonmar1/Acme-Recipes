@@ -25,8 +25,14 @@ public interface ChefFineDishRepository extends AbstractRepository {
 	
 	@Query("select sc.systemCurrency from SystemConfiguration sc")
 	String findSystemCurrency();
-
+		
 	@Query("select m from MoneyExchange m where m.source.currency = :currency and m.source.amount = :amount and m.target.currency = :systemCurrency")
 	MoneyExchange findMoneyExchange(@Param("currency")String currency, @Param("amount")Double amount,
 		@Param("systemCurrency")String systemCurrency);
+	
+	@Query("Select f from FineDish f where f.chef.id = :id and (status = acme.entities.fineDishes.FineDishStatus.ACCEPTED or status = acme.entities.fineDishes.FineDishStatus.DENIED)") 
+	Collection<FineDish> findAcceptedOrDeniedFineDishesByChefId(@Param("id")int id); 
+	
+	@Query("Select f from FineDish f where f.chef.id = :id and status = acme.entities.fineDishes.FineDishStatus.PROPOSED") 
+	Collection<FineDish> findProposedFineDishesByChefId(@Param("id")int id); 
 }

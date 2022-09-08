@@ -81,7 +81,7 @@ public class ChefFineDishShowService implements AbstractShowService<Chef, FineDi
 		model.setAttribute("dif", dif);
 		model.setAttribute("convertir", this.convertir(entity.getBudget()).getTarget());
 		 
-		request.unbind(entity, model, "code", "budget", "info", "startDate","finishDate","status","chef.userAccount.username","chef.organisation","chef.info","chef.assertion");	 
+		request.unbind(entity, model, "code", "budget", "info","request","startDate","finishDate","status","epicure.userAccount.username","epicure.organisation","epicure.info","epicure.assertion");	 
 		model.setAttribute("confirmation", false); 
 		model.setAttribute("readonly", true); 
 	} 
