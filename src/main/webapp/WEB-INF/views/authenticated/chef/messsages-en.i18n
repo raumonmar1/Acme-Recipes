@@ -1,0 +1,19 @@
+# i18n-en.i18n
+#
+# Copyright (C) 2012-2022 Alejandro Baños.
+#
+# In keeping with the traditional purpose of furthering education and research, it is
+# the policy of the copyright owner to permit non-commercial use and redistribution of
+# this software. It has been tested carefully, but it is not guaranteed for any particular
+# purposes.  The copyright owner does not offer any warranties or representations, nor do
+# they accept any liabilities with respect to them.
+
+authenticated.chef.chef.form.title.create = Become a worker
+authenticated.chef.chef.form.title.update = Update your worker data
+
+authenticated.chef.chef.form.label.organisation = Organisation
+authenticated.chef.chef.form.label.assertion = Assertion
+authenticated.chef.chef.form.label.info = Info
+
+authenticated.chef.chef.form.button.create = Register
+authenticated.chef.chef.form.button.update = Update
