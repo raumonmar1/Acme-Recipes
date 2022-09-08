@@ -10,3 +10,5 @@
 	<acme:list-column code="chef.element.list.label.retail-price" path="retailPrice" width="20%"/>
 	<acme:list-column code="chef.element.list.label.amount-unit" path="amountUnit" width="20%"/>
 </acme:list>
+
+<acme:button code="chef.element.list.button.create" action="/chef/element/create"/>

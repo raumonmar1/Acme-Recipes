@@ -18,3 +18,14 @@ chef.element.form.label.link = Link:
 chef.element.form.label.chef = Chef:
 chef.element.form.label.published = Published:
 
+chef.element.form.button.create = Create
+chef.element.list.button.create = Create new Element
+chef.element.form.button.delete = Delete
+chef.element.form.button.update = Update
+chef.element.form.button.publish = Publish
+
+chef.element.form.error.duplicated = This code already exists
+chef.element.form.error.retail-price-kitchen-utensil-zero-or-positive = The retail price of a kitchen utensil must be 0 or positive
+chef.element.form.error.retail-price-ingredient-positive = The retail price of an ingredient must be positive
+chef.element.form.error.retail-price-currency-not-accepted = The currency is not accepted
+
