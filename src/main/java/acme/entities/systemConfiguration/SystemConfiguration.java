@@ -26,7 +26,10 @@ public class SystemConfiguration extends AbstractEntity{
 	public String systemCurrency;
 
 	@NotBlank
-	public String spamTuples;
+	public String spamTuplesEn;
+	
+	@NotBlank
+	public String spamTuplesEs;
 	
 	@NotNull
 	@Range(min = 0, max = 1)
